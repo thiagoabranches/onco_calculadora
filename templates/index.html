@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Medicamentos com Calculadora Avançada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .modal-overlay { transition: opacity 0.3s ease; }
+        .modal-content { transition: transform 0.3s ease; }
+        @media print {
+            @page { size: portrait; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .no-print { display: none !important; }
+            .printing-table .printable-area { display: block; margin: 0; padding: 1cm; width: 100%; box-shadow: none; border: none; }
+            .printing-table body > *:not(.printable-area) { display: none; }
+            .printing-table table { font-size: 6pt; width: 100%; break-inside: auto; }
+            .printing-table th, .printing-table td { padding: 3px 4px; }
+            .printing-table tr { break-inside: avoid; page-break-inside: avoid; }
+            .printing-table .footer-print { display: block; position: fixed; bottom: 0; left: 1cm; right: 1cm; margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid #e5e7eb; text-align: left; background-color: #ffffff; }
+            .printing-table .actions-col { display: none; }
+            .printing-evolution #evolution-print-area { display: block !important; }
+            .printing-evolution body > *:not(#evolution-print-area) { display: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <div class="no-print bg-white p-6 rounded-lg shadow-md mb-8">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-gray-700 mb-2">Tabela de Medicamentos com IA e Calculadora</h1>
+                <p class="text-gray-600 mb-4">Use a busca, as calculadoras de dose ou obtenha resumos com IA.</p>
+                <div class="flex justify-center gap-4">
+                    <button id="open-clinical-pharmacy-btn" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out shadow-sm">
+                        Farmácia Clínica ⚕️
+                    </button>
+                </div>
+            </div>
+            <div class="mt-6">
+                <label for="search-input" class="block text-sm font-medium text-gray-700 mb-1">Buscar na tabela:</label>
+                <input type="text" id="search-input" placeholder="Digite o nome do medicamento, classe, etc." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            </div>
+        </div>
+
+        <div id="printable-table" class="printable-area bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold mb-4 text-center">Tabela 1 – Parâmetros de Preparo e Segurança para Medicamentos Intravenosos</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-300">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider border-r">Medicamento</th>
+                            <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider border-r">Concentração (Segura)</th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-gray-600 uppercase tracking-wider border-r">SG 5%</th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-gray-600 uppercase tracking-wider border-r">SF 0,9%</th>
+                            <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider border-r">Dano Tecidual</th>
+                            <th scope="col" class="px-4 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider border-r">Estabilidade Dil.</th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-gray-600 uppercase tracking-wider border-r">Citotóxico</th>
+                            <th scope="col" class="px-4 py-3 text-center text-xs font-bold text-gray-600 uppercase tracking-wider actions-col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="medicine-table-body" class="bg-white divide-y divide-gray-200">
+                        </tbody>
+                </table>
+            </div>
+            <div class="footer-print mt-4 text-xs text-gray-500 hidden">
+                <p><span class="font-bold">Fonte:</span> Elaboração: Farmacêutico Thiago Abranches CRF-SP 091811</p>
+                <p>Data da elaboração original: 24/07/2025, com base nas referências atualizadas.</p>
+                <p id="generation-date-p" class="no-print">Tabela interativa gerada em: <span id="generation-date"></span></p>
+                <p class="mt-2"><span class="font-bold">Legenda:</span> IARC 1 - Carcinogênico para humanos; IARC 2A - Provavelmente carcinogênico; IARC 2B - Possivelmente carcinogênico; NTP K - Conhecido como carcinogênico; NTP R - Razoavelmente antecipado como carcinogênico.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="calculator-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden no-print">
+        <div class="modal-content bg-white rounded-lg shadow-xl w-full max-w-lg transform scale-95">
+            <div class="sticky top-0 bg-white border-b p-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-gray-800" id="calculator-title">Calculadora de Volume</h3>
+                <button onclick="hideModal(this.closest('.modal-overlay'))" class="text-gray-500 hover:text-gray-800">X</button>
+            </div>
+            <div class="p-6">
+                <div class="space-y-4">
+                    <div><label class="block text-sm font-medium text-gray-700">Dose Prescrita (mg)</label><input type="number" id="prescribed-dose" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"></div>
+                    <div><label class="block text-sm font-medium text-gray-700">Volume do Diluente (mL)</label><input type="number" id="diluent-volume" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"></div>
+                </div>
+                <div id="calculation-result" class="mt-6 p-4 bg-gray-50 rounded-lg hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="auc-calculator-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden no-print">
+        <div class="modal-content bg-white rounded-lg shadow-xl w-full max-w-lg transform scale-95">
+            <div class="sticky top-0 bg-white border-b p-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-gray-800">Calculadora de AUC (Carboplatina)</h3>
+                <button onclick="hideModal(this.closest('.modal-overlay'))" class="text-gray-500 hover:text-gray-800">X</button>
+            </div>
+            <div class="p-6">
+                <div class="text-sm text-gray-600 mb-4"><p>Fórmula de Calvert: <strong>Dose (mg) = AUC x (TFG + 25)</strong></p></div>
+                <div class="space-y-4">
+                    <div><label class="block text-sm font-medium text-gray-700">AUC Desejado (mg/mL·min)</label><input type="number" id="auc-input" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"></div>
+                    <div><label class="block text-sm font-medium text-gray-700">TFG (mL/min)</label><input type="number" id="gfr-input" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"></div>
+                </div>
+                <div id="auc-calculation-result" class="mt-6 p-4 bg-gray-50 rounded-lg hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clinical-pharmacy-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden no-print">
+        <div class="modal-content bg-white rounded-lg shadow-xl w-full max-w-2xl transform scale-95 max-h-[90vh] flex flex-col">
+            <div class="sticky top-0 bg-white border-b p-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-gray-800">Calculadoras de Farmácia Clínica</h3>
+                <button onclick="hideModal(this.closest('.modal-overlay'))" class="text-gray-500 hover:text-gray-800">X</button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <div class="mb-8 p-4 border rounded-lg">
+                    <h4 class="text-md font-bold text-indigo-700 mb-3">1. Cálculo por Área de Superfície Corporal (ASC)</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div><label class="block text-sm font-medium text-gray-700">Altura (cm)</label><input type="number" id="asc-height" class="mt-1 block w-full border rounded-md p-2"></div>
+                        <div><label class="block text-sm font-medium text-gray-700">Peso (kg)</label><input type="number" id="asc-weight" class="mt-1 block w-full border rounded-md p-2"></div>
+                        <div><label class="block text-sm font-medium text-gray-700">Dose (mg/m²)</label><input type="number" id="asc-dose" class="mt-1 block w-full border rounded-md p-2"></div>
+                    </div>
+                    <div id="asc-result" class="mt-4 p-4 bg-gray-50 rounded-lg hidden"></div>
+                </div>
+                <div class="mb-8 p-4 border rounded-lg">
+                    <h4 class="text-md font-bold text-indigo-700 mb-3">2. Cálculo por Peso Corporal</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div><label class="block text-sm font-medium text-gray-700">Peso (kg)</label><input type="number" id="weight-kg" class="mt-1 block w-full border rounded-md p-2"></div>
+                        <div><label class="block text-sm font-medium text-gray-700">Dose (mg/kg)</label><input type="number" id="weight-dose" class="mt-1 block w-full border rounded-md p-2"></div>
+                    </div>
+                    <div id="weight-result" class="mt-4 p-4 bg-gray-50 rounded-lg hidden"></div>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="text-md font-bold text-indigo-700 mb-3">3. Evolução Farmacêutica</h4>
+                    <textarea id="pharma-evolution-text" class="w-full h-40 p-2 border rounded-md" placeholder="Digite a evolução farmacêutica aqui..."></textarea>
+                    <button id="save-evolution-btn" class="mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 shadow-sm">Salvar Evolução</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pdf-confirm-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden no-print">
+        <div class="modal-content bg-white rounded-lg shadow-xl w-full max-w-sm transform scale-95">
+            <div class="p-6 text-center">
+                <h3 class="text-lg font-medium text-gray-800 mt-4">Gerar PDF</h3>
+                <p class="text-sm text-gray-600 mt-2">Deseja gerar um PDF desta evolução farmacêutica?</p>
+                <div class="mt-6 flex justify-center gap-4">
+                    <button id="confirm-pdf-no" class="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg">Não</button>
+                    <button id="confirm-pdf-yes" class="px-6 py-2 bg-blue-600 text-white rounded-lg">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="evolution-print-area" class="hidden"></div>
+
+<script>
+    let medicines = []; // Vazio, preenchido via Python
+
+    const tableBody = document.getElementById('medicine-table-body');
+    const searchInput = document.getElementById('search-input');
+    const generationDateSpan = document.getElementById('generation-date');
+    const calculatorModal = document.getElementById('calculator-modal');
+    const calculatorTitle = document.getElementById('calculator-title');
+    const aucCalculatorModal = document.getElementById('auc-calculator-modal');
+    const clinicalPharmacyModal = document.getElementById('clinical-pharmacy-modal');
+    const pdfConfirmModal = document.getElementById('pdf-confirm-modal');
+
+    function getSimNaoClass(value) {
+        if (value && value.toLowerCase().startsWith('sim')) return 'text-green-600 font-bold';
+        if (value && value.toLowerCase().startsWith('não')) return 'text-red-600 font-bold';
+        return 'text-gray-600';
+    }
+
+    function renderTable(data) {
+        tableBody.innerHTML = '';
+        if (data.length === 0) {
+            tableBody.innerHTML = `<tr><td colspan="8" class="text-center py-4 text-gray-500">Nenhum medicamento encontrado.</td></tr>`;
+            return;
+        }
+        let currentCategory = null;
+        let isOddRow = false;
+        
+        data.sort((a, b) => a.name.localeCompare(b.name));
+
+        data.forEach(med => {
+            if (med.category !== currentCategory) {
+                currentCategory = med.category;
+                const categoryRow = `<tr class="bg-gray-200"><td colspan="8" class="px-4 py-2 text-sm font-bold text-gray-700">${med.category}</td></tr>`;
+                tableBody.insertAdjacentHTML('beforeend', categoryRow);
+                isOddRow = false;
+            }
+            const rowBgClass = isOddRow ? 'bg-gray-50' : 'bg-white';
+            isOddRow = !isOddRow;
+            
+            let actionsHtml = '';
+            if (med.concentracaoPadrao !== null && med.concentracaoPadrao !== undefined) {
+                actionsHtml += `<button data-id="${med.id}" class="calculate-volume-btn bg-teal-600 text-white text-xs font-bold py-1 px-2 rounded-md hover:bg-teal-700 transition">Calcular Volume ⚖️</button>`;
+            }
+            if (med.name === 'Carboplatina') {
+                actionsHtml += `<button data-id="${med.id}" class="calculate-auc-btn bg-yellow-500 text-white text-xs font-bold py-1 px-2 rounded-md hover:bg-yellow-600 transition ml-1">Calcular AUC 🧮</button>`;
+            }
+
+            const row = `
+                <tr class="${rowBgClass}">
+                    <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900 border-r">${med.name}</td>
+                    <td class="px-4 py-2 whitespace-nowrap text-sm text-gray-600 border-r">${med.concentration}</td>
+                    <td class="px-4 py-2 text-center text-sm ${getSimNaoClass(med.sg5)} border-r">${med.sg5}</td>
+                    <td class="px-4 py-2 text-center text-sm ${getSimNaoClass(med.sf09)} border-r">${med.sf09}</td>
+                    <td class="px-4 py-2 text-sm text-gray-600 border-r">${med.tissueDamage}</td>
+                    <td class="px-4 py-2 whitespace-nowrap text-sm text-gray-600 border-r">${med.stabilityDiluted}</td>
+                    <td class="px-4 py-2 text-center text-sm ${getSimNaoClass(med.cytotoxic)} border-r">${med.cytotoxic}</td>
+                    <td class="px-4 py-2 text-center text-sm text-gray-600 actions-col">${actionsHtml}</td>
+                </tr>
+            `;
+            tableBody.insertAdjacentHTML('beforeend', row);
+        });
+    }
+
+    function handleSearch(term) {
+        const lowerCaseTerm = term.toLowerCase();
+        const filteredData = medicines.filter(med => 
+            Object.values(med).some(val => 
+                String(val).toLowerCase().includes(lowerCaseTerm)
+            )
+        );
+        renderTable(filteredData);
+    }
+
+    function showModal(modal) {
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+            const content = modal.querySelector('.modal-content');
+            if (content) content.classList.remove('opacity-0', 'scale-95');
+        }, 10);
+    }
+
+    function hideModal(modal) {
+        const content = modal.querySelector('.modal-content');
+        if (content) content.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => { modal.classList.add('hidden'); }, 300);
+    }
+
+    let currentMedication = null;
+
+    function openVolumeCalculator(medId) {
+        currentMedication = medicines.find(m => m.id === parseInt(medId));
+        if (!currentMedication) return;
+        calculatorTitle.textContent = `Calculadora: ${currentMedication.name}`;
+        document.getElementById('prescribed-dose').value = '';
+        document.getElementById('diluent-volume').value = '';
+        document.getElementById('calculation-result').classList.add('hidden');
+        showModal(calculatorModal);
+    }
+    
+    function openAucCalculator() {
+        document.getElementById('auc-input').value = '';
+        document.getElementById('gfr-input').value = '';
+        document.getElementById('auc-calculation-result').classList.add('hidden');
+        showModal(aucCalculatorModal);
+    }
+
+    function openClinicalPharmacyModal() { showModal(clinicalPharmacyModal); }
+
+    function calculateVolumeAndConcentration() {
+        if (!currentMedication) return;
+        const dose = parseFloat(document.getElementById('prescribed-dose').value);
+        const diluentVolume = parseFloat(document.getElementById('diluent-volume').value);
+        const resultContainer = document.getElementById('calculation-result');
+        
+        if (isNaN(dose) || isNaN(diluentVolume) || dose <= 0 || diluentVolume <= 0) {
+            resultContainer.classList.add('hidden');
+            return;
+        }
+        
+        const { concentracaoPadrao, concMin, concMax } = currentMedication;
+        const volumeToAspirate = dose / concentracaoPadrao;
+        const finalVolume = volumeToAspirate + diluentVolume;
+        const finalConcentration = dose / finalVolume;
+        
+        let concentrationStatus, statusColorClass, statusText;
+        const epsilon = 1e-9;
+        
+        if (finalConcentration >= (concMin - epsilon) && finalConcentration <= (concMax + epsilon)) {
+            concentrationStatus = "DENTRO DA FAIXA";
+            statusColorClass = "bg-green-100 text-green-800";
+            statusText = `A concentração final está entre os limites seguros de ${concMin} e ${concMax} mg/mL.`;
+        } else {
+            concentrationStatus = "FORA DA FAIXA";
+            statusColorClass = "bg-red-100 text-red-800";
+            statusText = finalConcentration < concMin ? `Atenção: Concentração abaixo do mínimo seguro de ${concMin} mg/mL.` : `Atenção: Concentração acima do máximo seguro de ${concMax} mg/mL.`;
+        }
+        
+        if (concMin === concMax && Math.abs(finalConcentration - concMax) > epsilon) {
+             concentrationStatus = "FORA DA FAIXA";
+             statusColorClass = "bg-red-100 text-red-800";
+             statusText = `Atenção: A concentração final deve ser exatamente ${concMax} mg/mL.`;
+        }
+        
+        resultContainer.innerHTML = `<div class="space-y-3"><div class="text-center border-b pb-2"><p class="text-sm font-medium text-gray-600">Volume a Aspirar</p><p class="text-3xl font-bold text-blue-600">${volumeToAspirate.toFixed(2)} mL</p></div><div class="grid grid-cols-2 gap-4 text-center"><div><p class="text-sm font-medium text-gray-600">Volume Final</p><p class="text-xl font-bold text-gray-800">${finalVolume.toFixed(2)} mL</p></div><div><p class="text-sm font-medium text-gray-600">Concentração Final</p><p class="text-xl font-bold text-gray-800">${finalConcentration.toFixed(3)} mg/mL</p></div></div></div><div class="mt-4 p-3 rounded-lg text-center ${statusColorClass}"><p class="font-bold text-sm">${concentrationStatus}</p><p class="text-xs">${statusText}</p></div>`;
+        resultContainer.classList.remove('hidden');
+    }
+
+    function calculateAucDose() {
+        const auc = parseFloat(document.getElementById('auc-input').value);
+        const gfr = parseFloat(document.getElementById('gfr-input').value);
+        const resultContainer = document.getElementById('auc-calculation-result');
+        const carboplatin = medicines.find(m => m.name === 'Carboplatina');
+        
+        if (isNaN(auc) || isNaN(gfr) || auc <= 0 || gfr <= 0 || !carboplatin) {
+            resultContainer.classList.add('hidden');
+            return;
+        }
+        
+        const totalDose = auc * (gfr + 25);
+        const volumeToAspirate = totalDose / carboplatin.concentracaoPadrao;
+        
+        resultContainer.innerHTML = `<div class="space-y-3 text-center"><div><p class="text-sm font-medium text-gray-600">Dose Total Calculada</p><p class="text-2xl font-bold text-gray-800">${totalDose.toFixed(2)} mg</p></div><div class="border-t pt-3"><p class="text-sm font-medium text-gray-600">Volume a Aspirar</p><p class="text-3xl font-bold text-blue-600">${volumeToAspirate.toFixed(2)} mL</p></div></div>`;
+        resultContainer.classList.remove('hidden');
+    }
+
+    function calculateAscDose() {
+        const height = parseFloat(document.getElementById('asc-height').value);
+        const weight = parseFloat(document.getElementById('asc-weight').value);
+        const standardDose = parseFloat(document.getElementById('asc-dose').value);
+        const resultContainer = document.getElementById('asc-result');
+
+        if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+            resultContainer.classList.add('hidden');
+            return;
+        }
+
+        const asc = Math.sqrt((height * weight) / 3600);
+        let resultHtml = `<div class="text-center"><p class="text-sm font-medium text-gray-600">ASC Calculada</p><p class="text-xl font-bold text-gray-800">${asc.toFixed(2)} m²</p></div>`;
+
+        if (!isNaN(standardDose) && standardDose > 0) {
+            const finalDose = asc * standardDose;
+            resultHtml += `<div class="text-center border-t mt-3 pt-3"><p class="text-sm font-medium text-gray-600">Dose Final</p><p class="text-3xl font-bold text-indigo-600">${finalDose.toFixed(2)} mg</p></div>`;
+        }
+        resultContainer.innerHTML = resultHtml;
+        resultContainer.classList.remove('hidden');
+    }
+
+    function calculateWeightDose() {
+        const weight = parseFloat(document.getElementById('weight-kg').value);
+        const standardDose = parseFloat(document.getElementById('weight-dose').value);
+        const resultContainer = document.getElementById('weight-result');
+
+        if (isNaN(weight) || isNaN(standardDose) || weight <= 0 || standardDose <= 0) {
+            resultContainer.classList.add('hidden');
+            return;
+        }
+
+        const finalDose = weight * standardDose;
+        resultContainer.innerHTML = `<div class="text-center"><p class="text-sm font-medium text-gray-600">Dose Final Calculada</p><p class="text-3xl font-bold text-indigo-600">${finalDose.toFixed(2)} mg</p></div>`;
+        resultContainer.classList.remove('hidden');
+    }
+
+    function handleSaveEvolution() {
+        const evolutionText = document.getElementById('pharma-evolution-text').value;
+        if (evolutionText.trim() === '') return;
+        showModal(pdfConfirmModal);
+    }
+
+    function generateEvolutionPdf() {
+        const evolutionText = document.getElementById('pharma-evolution-text').value;
+        const evolutionPrintArea = document.getElementById('evolution-print-area');
+        
+        evolutionPrintArea.innerHTML = `
+            <div style="font-family: 'Inter', sans-serif; padding: 2cm;">
+                <h1 style="font-size: 16pt; font-weight: bold; text-align: center; margin-bottom: 2rem;">Evolução Farmacêutica</h1>
+                <div style="margin-bottom: 2rem; font-size: 12pt;">
+                    <p><strong>Paciente:</strong> _________________________________________</p>
+                    <p><strong>Data:</strong> ${new Date().toLocaleDateString('pt-BR')}</p>
+                </div>
+                <div style="white-space: pre-wrap; font-size: 12pt; line-height: 1.5; border: 1px solid #ccc; padding: 1rem; min-height: 400px; border-radius: 8px;">${evolutionText}</div>
+                <div style="margin-top: 5rem; text-align: center;">
+                    <p>_________________________________________</p>
+                    <p><strong>Assinatura do Farmacêutico(a)</strong></p>
+                    <p>CRF: _________________</p>
+                </div>
+            </div>
+        `;
+        
+        document.body.classList.add('printing-evolution');
+        window.print();
+        hideModal(pdfConfirmModal);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if(generationDateSpan) {
+            generationDateSpan.textContent = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        }
+        searchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+        tableBody.addEventListener('click', (e) => {
+            if (e.target.classList.contains('calculate-volume-btn')) openVolumeCalculator(e.target.dataset.id);
+            if (e.target.classList.contains('calculate-auc-btn')) openAucCalculator();
+        });
+        document.getElementById('open-clinical-pharmacy-btn').addEventListener('click', openClinicalPharmacyModal);
+        document.getElementById('prescribed-dose').addEventListener('input', calculateVolumeAndConcentration);
+        document.getElementById('diluent-volume').addEventListener('input', calculateVolumeAndConcentration);
+        document.getElementById('auc-input').addEventListener('input', calculateAucDose);
+        document.getElementById('gfr-input').addEventListener('input', calculateAucDose);
+        document.getElementById('asc-height').addEventListener('input', calculateAscDose);
+        document.getElementById('asc-weight').addEventListener('input', calculateAscDose);
+        document.getElementById('asc-dose').addEventListener('input', calculateAscDose);
+        document.getElementById('weight-kg').addEventListener('input', calculateWeightDose);
+        document.getElementById('weight-dose').addEventListener('input', calculateWeightDose);
+        document.getElementById('save-evolution-btn').addEventListener('click', handleSaveEvolution);
+        document.getElementById('confirm-pdf-no').addEventListener('click', () => hideModal(pdfConfirmModal));
+        document.getElementById('confirm-pdf-yes').addEventListener('click', generateEvolutionPdf);
+        window.addEventListener('afterprint', () => {
+            document.body.classList.remove('printing-evolution');
+            document.getElementById('evolution-print-area').innerHTML = '';
+        });
+
+        // FETCH API
+        fetch('/api/medicamentos')
+            .then(response => response.json())
+            .then(data => {
+                medicines = data;
+                renderTable(medicines);
+            })
+            .catch(error => {
+                console.error('Erro ao carregar medicamentos:', error);
+                tableBody.innerHTML = `<tr><td colspan="8" class="text-center py-4 text-red-500">Erro ao carregar dados do sistema. Verifique o servidor.</td></tr>`;
+            });
+    });
+</script>
+</body>
+</html>
