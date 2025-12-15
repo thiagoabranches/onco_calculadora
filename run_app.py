@@ -30,16 +30,16 @@ def kill_flask_process():
 atexit.register(kill_flask_process)
 
 
+
 # 2. Iniciar o Servidor Flask em Background (Agora, usa o comando ideal para Cloud)
-# Usaremos a abordagem de iniciar o Gunicorn ou Python, e o Streamlit exibirá via Iframe.
 def start_flask_server():
     global flask_process
     
     if flask_process is None:
         st.info("Iniciando servidor Flask em segundo plano...")
         
-        # Streamlit Cloud prefere Gunicorn
-        command = ["gunicorn", "-w", "4", "-b", f"0.0.0.0:{FLASK_PORT}", "app:app"]
+        # Chamada CORRIGIDA para Streamlit Cloud: Executa Gunicorn como um módulo Python
+        command = [sys.executable, "-m", "gunicorn", "-w", "4", "-b", f"0.0.0.0:{FLASK_PORT}", "app:app"]
         
         try:
             flask_process = subprocess.Popen(command, 
@@ -57,6 +57,8 @@ def start_flask_server():
             return False
             
     return True
+
+
 
 # Tenta iniciar o servidor
 if start_flask_server():
