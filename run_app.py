@@ -9,7 +9,7 @@ import atexit
 
 # 1. Configurações Iniciais
 FLASK_PORT = 8000
-FLASK_SERVER_URL = f"http://localhost:{FLASK_PORT}"
+FLASK_SERVER_URL = f"http://0.0.0.0:{FLASK_PORT}"
 
 st.set_page_config(layout="wide")
 st.title("OncoCalc Pro - Módulo Streamlit/Flask")
@@ -49,7 +49,7 @@ def start_flask_server():
             st.success(f"Servidor Flask iniciado na porta {FLASK_PORT}.")
             
             # Checagem de saúde (Health Check)
-            requests.get(FLASK_SERVER_URL, timeout=10)
+            requests.get(FLASK_SERVER_HEALTH_URL, timeout=10)
 
         except (FileNotFoundError, requests.exceptions.RequestException) as e:
             st.error(f"Falha Crítica ao iniciar o servidor Flask/Gunicorn: {e}")
