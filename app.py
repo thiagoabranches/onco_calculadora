@@ -37,6 +37,4 @@ def get_db():
 def index():
     return render_template('index.html')
 
-if __name__ == '__main__':
-    if not os.path.exists('templates'): os.makedirs('templates')
-    app.run(debug=True, port=5000)
+if not os.path.exists('templates'): os.makedirs('templates')
