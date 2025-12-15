@@ -1,3 +1,6 @@
 Flask
 pandas
 openpyxl
+streamlit-html-component
+gunicorn
+requests
