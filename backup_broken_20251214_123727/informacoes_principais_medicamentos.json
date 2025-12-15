@@ -1,0 +1,3046 @@
+[
+  {
+    "farmaco": "aflibercepte",
+    "nomes_comerciais": [
+      "Zaltrap®",
+      "Sanofi"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "100mg/ 4ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "4 ml"
+      },
+      {
+        "descricao": "200mg/ 8ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "8 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,6-8 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "alfapeginterferona 2a recombinante",
+    "nomes_comerciais": [
+      "Pegasys®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Seringa preenchida",
+        "tipo": "Seringa preenchida",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "180 μg/0,5mL",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "Uso imediato"
+    }
+  },
+  {
+    "farmaco": "amivantamabe",
+    "nomes_comerciais": [
+      "Rybrevant®",
+      "Jansen Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "FA 350mg/7ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "7 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "atezolizumabe",
+    "nomes_comerciais": [
+      "Tecentriq®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "1200mg/20ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "20 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "3,2-16,8 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "avelumabe",
+    "nomes_comerciais": [
+      "Bavencio®",
+      "Merck"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "200mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "azacitidina",
+    "nomes_comerciais": [
+      "Vidaza®",
+      "United Medical"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "1 horas",
+      "diluido": "1 horas"
+    }
+  },
+  {
+    "farmaco": "Bacilo de Calmette Guérin",
+    "nomes_comerciais": [
+      "Urohipe®",
+      "Uno Health Care"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 40mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "Uso imediato"
+    }
+  },
+  {
+    "farmaco": "belinostat",
+    "nomes_comerciais": [
+      "Beleodaq®",
+      "Pint Pharma"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  500mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "12 horas",
+      "diluido": "36 horas"
+    }
+  },
+  {
+    "farmaco": "bendamustina",
+    "nomes_comerciais": [
+      "Ribomustin®",
+      "Janssen-Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 25 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "5 horas"
+    }
+  },
+  {
+    "farmaco": "betadinutuximabe",
+    "nomes_comerciais": [
+      "Qarziba®",
+      "Global"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "bevacizumabe",
+    "nomes_comerciais": [
+      "Avastin®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 400mg ¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1,4-16,5 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "bleomicina",
+    "nomes_comerciais": [
+      "Bonar®",
+      "Biossintética"
+    ],
+    "apresentacoes": [],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "blinatumomabe",
+    "nomes_comerciais": [
+      "Blincyto®",
+      "Amgen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "38,5mcg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "96 horas"
+    }
+  },
+  {
+    "farmaco": "bortezomibe",
+    "nomes_comerciais": [
+      "Mielocade®",
+      "Bergamo"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 3,5mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1,0 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "3 horas"
+    }
+  },
+  {
+    "farmaco": "brentuximabe vedotina",
+    "nomes_comerciais": [
+      "Adcetris®",
+      "Takeda"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,4-1,8 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "bussulfano",
+    "nomes_comerciais": [
+      "Busilvex®",
+      "Pierre Fabre"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj. FA 60mg/10mL¹",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,5 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "cabazitaxel",
+    "nomes_comerciais": [
+      "Jevtana®",
+      "Sanofi"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 60mg/1,5ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,10-0,26 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "carboplatina\n(CBDCA)",
+    "nomes_comerciais": [
+      "Fauldcarbo®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 150mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,5-2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "carfilzomib",
+    "nomes_comerciais": [
+      "Kyprolis®",
+      "Amgen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 60mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "Carmustina",
+    "nomes_comerciais": [
+      "Bicnu®",
+      "Emcure Pharmaeuticals Ltd"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg ¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "cemiplimabe",
+    "nomes_comerciais": [
+      "Libtayo®",
+      "Sanofi"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "350mg/7ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "7 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "cetuximabe",
+    "nomes_comerciais": [
+      "Erbitux®",
+      "Merck"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "100mg/20ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "20 ml"
+      },
+      {
+        "descricao": "500mg/50ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "50 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "ciclofosfamida\n(CTX)",
+    "nomes_comerciais": [
+      "Genuxal ®",
+      "Baxter"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1000mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "cidofovir",
+    "nomes_comerciais": [
+      "Vistide®",
+      "Pharmacia Brasil"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "375mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "cisplatina\n(CDDP)",
+    "nomes_comerciais": [
+      "Faulcispla®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "FA 50mg/50ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "50 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "citarabina \nARA-C",
+    "nomes_comerciais": [
+      "Fauldcita®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 500mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "100 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "cladribina \n(2CDA)",
+    "nomes_comerciais": [
+      "Leustatin®",
+      "Janssen Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj. FA 8mg/8mL",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": "8 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "dacarbazina \n(DTIC)",
+    "nomes_comerciais": [
+      "Fauldacar®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 200 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 600mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "10 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "dactinomicina\n(ACT-D)",
+    "nomes_comerciais": [
+      "Dacilon®",
+      "Celon Labs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 500 mcg1",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "10 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "daratumumab",
+    "nomes_comerciais": [
+      "Dalinvi ®",
+      "Jansen Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg/5ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      },
+      {
+        "descricao": "FA 400mg/20ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "20 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "15 horas"
+    }
+  },
+  {
+    "farmaco": "daunorrubicina (DAUNO)",
+    "nomes_comerciais": [
+      "Evoclass®",
+      "Farmarin"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20 mg¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "decitabina",
+    "nomes_comerciais": [
+      "Dacogen®",
+      "Jansen Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,15-1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "4 horas",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "docetaxel",
+    "nomes_comerciais": [
+      "Taxotere®",
+      "Sanofi Aventis"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 80mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,74 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "6 horas"
+    }
+  },
+  {
+    "farmaco": "dostarlimabe",
+    "nomes_comerciais": [
+      "Jemperli®",
+      "GlaxoSmithKline"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "500mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "doxorrubicina",
+    "nomes_comerciais": [
+      "Cloridrato de doxorrubicina®",
+      "Eurofarma"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof. Inj.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "doxorrubicina lipossomal",
+    "nomes_comerciais": [
+      "Doxopeg®",
+      "Zodiac"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "durvalumabe",
+    "nomes_comerciais": [
+      "Imfinzi®",
+      "AstraZeneca"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "500mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "120mg/2,4ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "4 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1-15 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "elotuzumabe",
+    "nomes_comerciais": [
+      "Empliciti®",
+      "Bristol-Myers"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof. Inj.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 300mg/12ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "12 ml"
+      },
+      {
+        "descricao": "FA 400mg/16ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "16 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1-6 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "elranatamabe",
+    "nomes_comerciais": [
+      "Elrexfio®",
+      "Pfizer"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "FA 44mg/1,1ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "1 ml"
+      },
+      {
+        "descricao": "FA 76mg/1,9ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "9 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "enfortumabe vedotina",
+    "nomes_comerciais": [
+      "Padcev®",
+      "Zodiac"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof. Inj.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 30mg/ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,3 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "16 horas"
+    }
+  },
+  {
+    "farmaco": "epcoritamabe",
+    "nomes_comerciais": [
+      "Epkinly®",
+      "Abbvie"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof. Inj.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 5mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 60mg/ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "epirrubicina\n                                                                                                                                                                                                                                                                (EPI)",
+    "nomes_comerciais": [
+      "Brecila®",
+      "Accord"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj. FA 10mg/5ml 50mg/25ml¹",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "eribulina",
+    "nomes_comerciais": [
+      "Halaven®",
+      "United Medical"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1mg/2ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "2 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,02-0,2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "etoposídeo\n(VP-16)",
+    "nomes_comerciais": [
+      "Epósido®",
+      "Blau"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg/5ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "fludarabina",
+    "nomes_comerciais": [
+      "Fludalibbs®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50 mg¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "8 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "Fluorouracil \n(5-FU)",
+    "nomes_comerciais": [
+      "Fauldfluor®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 500mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "FA 2,5g/50ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "50 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "foscarnet",
+    "nomes_comerciais": [
+      "Sol. Foscavir®",
+      "Clinigen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "Fr. 250ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "250 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "fotemustine",
+    "nomes_comerciais": [
+      "Muphoran®",
+      "Servier"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  208 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "1 horas"
+    }
+  },
+  {
+    "farmaco": "ganciclovir",
+    "nomes_comerciais": [
+      "Cymevene®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 500 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "10 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "12 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "gencitabina",
+    "nomes_comerciais": [
+      "Gencix®",
+      "Bergamo"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 200mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1000mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "40 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "gentuzumabe ozogamicina",
+    "nomes_comerciais": [
+      "Mylotarg®",
+      "Wyeth Indústria Farmacêutica LTDA"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "4,5 mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,075 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "16 horas",
+      "diluido": "18 horas"
+    }
+  },
+  {
+    "farmaco": "idarrubicina\n (IDA)",
+    "nomes_comerciais": [
+      "Ida®",
+      "Chemicaltech"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 5mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "ifosfamida\n(IFO)",
+    "nomes_comerciais": [
+      "Holoxane®",
+      "Baxter"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1G",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "40 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "inotuzumabe ozogamicina",
+    "nomes_comerciais": [
+      "Besponsa®",
+      "Wyeth"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1 mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,01-0,1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "4 horas",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "interleucina\n(aldesleukin)",
+    "nomes_comerciais": [
+      "Proleukin®",
+      "Clinigen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  22M UI",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,03 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "ipilimumabe",
+    "nomes_comerciais": [
+      "Yervoy®",
+      "Bristol-Myers Squibb"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj. FA 50mg/10ml 200mg/40ml",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1-4 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "irinotecano\n(CPT-11)",
+    "nomes_comerciais": [
+      "Proto-Itecan®",
+      "ABL"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,12 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "isatuximabe",
+    "nomes_comerciais": [
+      "Sarclisa®",
+      "Sanofi"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  100mg/5ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      },
+      {
+        "descricao": "FA 500mg/25 ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "25 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "lurbinectedin",
+    "nomes_comerciais": [
+      "Zepzelca®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  4mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "melfalano",
+    "nomes_comerciais": [
+      "Alkeran®",
+      "Aspen Pharma"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,45 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "metotrexato\n(MTX)",
+    "nomes_comerciais": [
+      "Fauldmetro®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  50mg/2ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "2 ml"
+      },
+      {
+        "descricao": "FA 500mg/20 ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "20 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "mitoxantrona",
+    "nomes_comerciais": [
+      "Evomixan®",
+      "Farmarin"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 20mg / 10 mL",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "mitomicina",
+    "nomes_comerciais": [
+      "Mitomicin-C Kyowa®",
+      "Meith Alpharma"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 2mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10mg1",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "8 horas",
+      "diluido": "Uso imediato"
+    }
+  },
+  {
+    "farmaco": "nab - paclitaxel",
+    "nomes_comerciais": [
+      "Abraxane®",
+      "BioScience"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof. FA 100mg¹",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "12 horas"
+    }
+  },
+  {
+    "farmaco": "naxitamabe",
+    "nomes_comerciais": [
+      "Danyelza®",
+      "Addium"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol Inj.",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 40mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1,1-1,6 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "8 horas"
+    }
+  },
+  {
+    "farmaco": "nivolumabe",
+    "nomes_comerciais": [
+      "Opdivo®",
+      "Bristol-Myers Squibb"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 40mg/4ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "4 ml"
+      },
+      {
+        "descricao": "FA 100mg/10ml1",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "nivolumabe + relatlimabe",
+    "nomes_comerciais": [
+      "Opdualag®",
+      "Bristol-Myers Squibb"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 240 mg + 80 mg1",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "3 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "obinutuzumabe",
+    "nomes_comerciais": [
+      "Gazyva®",
+      "Rocha"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1000mg/40ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "40 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "oxaliplatina",
+    "nomes_comerciais": [
+      "Bioezulen®",
+      "Biosintética"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "5 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "paclitaxel",
+    "nomes_comerciais": [
+      "Ontax®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 30mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 150mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,3-1,2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "27 horas"
+    }
+  },
+  {
+    "farmaco": "panitumumabe",
+    "nomes_comerciais": [
+      "Vectibix®",
+      "Amgen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "10 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "pegaspargase",
+    "nomes_comerciais": [
+      "Oncaspar®",
+      "Servier do Brasil"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 3750 UI",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "pembrolizumabe",
+    "nomes_comerciais": [
+      "Keytruda®",
+      "MSD"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1-10 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "6 horas"
+    }
+  },
+  {
+    "farmaco": "pemetrexede",
+    "nomes_comerciais": [
+      "Alimta®",
+      "Eli Lilly"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó Liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 500mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "pertuzumabe",
+    "nomes_comerciais": [
+      "Perjeta®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  420mg/14mL",
+        "tipo": "Outro",
+        "tamanho_frasco": "14 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "3,36 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "pertuzumabe + trastuzumabe",
+    "nomes_comerciais": [
+      "Phesgo®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "600mg+600mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "1200+600mg/15ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "15 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "polatuzumabe\nvedotina",
+    "nomes_comerciais": [
+      "RoPolivy®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 140mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,72-2,7 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "ramucirumabe",
+    "nomes_comerciais": [
+      "Cyramza®",
+      "Lilly"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "FA 500mg/50ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "50 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,4-4 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "rituximab",
+    "nomes_comerciais": [
+      "Mabthera®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg/10ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      },
+      {
+        "descricao": "FA 500mg/50ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "50 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1-4 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "sacituzumabe govitecano",
+    "nomes_comerciais": [
+      "Trodelvy®",
+      "Gilead"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 200mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "1,1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "tafasitamabe",
+    "nomes_comerciais": [
+      "Minjuvi®",
+      "United medical"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 200mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "Não especificado"
+    }
+  },
+  {
+    "farmaco": "talquetamabe",
+    "nomes_comerciais": [
+      "Talvey®",
+      "Janssen-Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 3mg/1,5ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      },
+      {
+        "descricao": "FA 40mg/1ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "1 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "tarlatamabe",
+    "nomes_comerciais": [
+      "Imdelltra®",
+      "Amgen"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "4 horas",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "tebentafusp",
+    "nomes_comerciais": [
+      "Kimmtrak®",
+      "Medison Pharma"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mcg/0,5ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Uso imediato",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "teclistamabe",
+    "nomes_comerciais": [
+      "Tecvayli®",
+      "Janssen-Cilag"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 30mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 153mg/ml",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "20 horas"
+    }
+  },
+  {
+    "farmaco": "temozolomida",
+    "nomes_comerciais": [
+      "Temodal ®",
+      "Schering-Plough"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg1",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "14 horas",
+      "diluido": "14 horas"
+    }
+  },
+  {
+    "farmaco": "tensirolimo",
+    "nomes_comerciais": [
+      "Torisel®",
+      "Wyeth"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 25mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "6 horas"
+    }
+  },
+  {
+    "farmaco": "tiotepa",
+    "nomes_comerciais": [
+      "Tepadina®",
+      "RIEMSER Pharma GmbH",
+      "Importado"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 15mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,5-1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "8 horas",
+      "diluido": "4 horas"
+    }
+  },
+  {
+    "farmaco": "trabectedina",
+    "nomes_comerciais": [
+      "Yondelis®",
+      "Adium"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 1mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "30 horas",
+      "diluido": "30 horas"
+    }
+  },
+  {
+    "farmaco": "trastuzumabe",
+    "nomes_comerciais": [
+      "Herceptin®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 150mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 440mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "28 dias",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "trastuzumab deruxtecan",
+    "nomes_comerciais": [
+      "Enhertu®",
+      "Daiichi-Sankyo"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Não compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "trastuzumab entansina",
+    "nomes_comerciais": [
+      "Kadcyla®",
+      "Roche"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 160mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "tremelimumabe",
+    "nomes_comerciais": [
+      "Imjudo®",
+      "Astrazeneca"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "25mg/1,25ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "25 ml"
+      },
+      {
+        "descricao": "300mg/15ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "15 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "trióxido de arsênio",
+    "nomes_comerciais": [
+      "Trisenox®",
+      "Teva"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 12mg/6ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "6 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "topotecano",
+    "nomes_comerciais": [
+      "Hycantin®",
+      "Novartis"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 4mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "vedolizumabe",
+    "nomes_comerciais": [
+      "Entyvio®",
+      "Takeda"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 300mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "8 horas",
+      "diluido": "12 horas"
+    }
+  },
+  {
+    "farmaco": "vimblastina",
+    "nomes_comerciais": [
+      "Faulblastina®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10 mg/10ml¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "10 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "Uso imediato"
+    }
+  },
+  {
+    "farmaco": "vinorelbina",
+    "nomes_comerciais": [
+      "Navelbine®",
+      "Pierre Fabre"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 10mg/1mL¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "1 ml"
+      },
+      {
+        "descricao": "FA 50mg/5mL¹",
+        "tipo": "Outro",
+        "tamanho_frasco": "5 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "Não especificado",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "vincristina\n(VCR)",
+    "nomes_comerciais": [
+      "Fauldvincri®",
+      "Libbs"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Sol. Inj.",
+        "tipo": "Solução injetável",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA  1mg/1ml",
+        "tipo": "Outro",
+        "tamanho_frasco": "1 ml"
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "0,01-1 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "48 horas",
+      "diluido": "48 horas"
+    }
+  },
+  {
+    "farmaco": "vinflunina",
+    "nomes_comerciais": [
+      "Javlor®",
+      "Pierre-Fabre"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 50mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 100mg",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "FA 250mg1",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "",
+    "compatibilidade": {
+      "sg_5%": "Compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "24 horas",
+      "diluido": "24 horas"
+    }
+  },
+  {
+    "farmaco": "zolbetuximabe",
+    "nomes_comerciais": [
+      "Vyloy®",
+      "Astellas"
+    ],
+    "apresentacoes": [
+      {
+        "descricao": "Pó liof.",
+        "tipo": "Pó liofilizado",
+        "tamanho_frasco": ""
+      },
+      {
+        "descricao": "100mg¹",
+        "tipo": "Outro",
+        "tamanho_frasco": ""
+      }
+    ],
+    "concentracao_frasco": "",
+    "faixa_concentracao_mg_ml": "2 mg/mL",
+    "compatibilidade": {
+      "sg_5%": "Não compatível",
+      "sf_0.9%": "Compatível"
+    },
+    "estabilidade": {
+      "reconstituido": "5 horas",
+      "diluido": "24 horas"
+    }
+  }
+]

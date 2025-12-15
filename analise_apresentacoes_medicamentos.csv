@@ -1,0 +1,40 @@
+Fármaco,Nome Comercial,Apresentação Bruta,Concentrações
+aflibercepte,Zaltrap (Sanofi),Frasco 100mg/4mL,100mg
+aflibercepte,Zaltrap (Sanofi),Frasco 200mg/8mL,200mg
+rituximabe,Mabthera (Roche),Frasco 100mg/10mL,100mg
+rituximabe,Mabthera (Roche),Frasco 500mg/50mL,500mg
+rituximabe,Riximyo (Sandoz),Frasco 100mg,100mg
+rituximabe,Riximyo (Sandoz),Frasco 500mg,500mg
+trastuzumabe,Herceptin (Roche),Frasco 440mg,440mg
+trastuzumabe,Herceptin (Roche),Frasco 150mg,150mg
+trastuzumabe,Zedora (Libbs),Frasco 440mg,440mg
+paclitaxel,Taxol (BMS),Frasco 30mg/5mL,30mg
+paclitaxel,Taxol (BMS),Frasco 100mg/16.7mL,100mg
+paclitaxel,Taxol (BMS),Frasco 300mg/50mL,300mg
+paclitaxel,Ontax (Libbs),Frasco 30mg,30mg
+paclitaxel,Ontax (Libbs),Frasco 100mg,100mg
+paclitaxel,Ontax (Libbs),Frasco 300mg,300mg
+docetaxel,Taxotere (Sanofi),Frasco 20mg/1mL,20mg
+docetaxel,Taxotere (Sanofi),Frasco 80mg/4mL,80mg
+pemetrexede,Alimta (Lilly),Frasco 100mg,100mg
+pemetrexede,Alimta (Lilly),Frasco 500mg,500mg
+bevacizumabe,Avastin (Roche),Frasco 100mg/4mL,100mg
+bevacizumabe,Avastin (Roche),Frasco 400mg/16mL,400mg
+bortezomibe,Velcade (Takeda),Frasco 3.5mg,3.5mg
+cisplatina,Faulcispla (Libbs),Frasco 10mg,10mg
+cisplatina,Faulcispla (Libbs),Frasco 50mg,50mg
+cisplatina,Faulcispla (Libbs),Frasco 100mg,100mg
+carboplatina,Fauldcarbo (Libbs),Frasco 50mg,50mg
+carboplatina,Fauldcarbo (Libbs),Frasco 150mg,150mg
+carboplatina,Fauldcarbo (Libbs),Frasco 450mg,450mg
+oxaliplatina,Eloxatin (Sanofi),Frasco 50mg,50mg
+oxaliplatina,Eloxatin (Sanofi),Frasco 100mg,100mg
+gencitabina,Genzar (Lilly),Frasco 200mg,200mg
+gencitabina,Genzar (Lilly),Frasco 1g,1g
+vinorelbina,Navelbine (Pierre Fabre),Frasco 10mg,10mg
+vinorelbina,Navelbine (Pierre Fabre),Frasco 50mg,50mg
+vinflunina,Javlor (Pierre Fabre),Frasco 50mg,50mg
+vinflunina,Javlor (Pierre Fabre),Frasco 100mg,100mg
+vinflunina,Javlor (Pierre Fabre),Frasco 250mg,250mg
+atezolizumabe,Tecentriq (Roche),Frasco 1200mg/20mL,1200mg
+atezolizumabe,Tecentriq (Roche),Frasco 840mg/14mL,840mg

@@ -1,0 +1,826 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Aflibercepte",
+    "brand_name": "Zaltrap®",
+    "concentration": "Frasco 100 mg/4 mL | 200 mg/8 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "2": {
+    "id": 2,
+    "name": "Alfapeginterferona 2a",
+    "brand_name": "Pegasys®",
+    "concentration": "Seringa 180 mcg/0,5 mL",
+    "sg5": "-",
+    "sf09": "-"
+  },
+  "3": {
+    "id": 3,
+    "name": "Amivantamabe",
+    "brand_name": "Rybrevant®",
+    "concentration": "Frasco 350 mg/7 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "4": {
+    "id": 4,
+    "name": "Atezolizumabe",
+    "brand_name": "Tecentriq®",
+    "concentration": "Frasco 1200 mg | 840 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "5": {
+    "id": 5,
+    "name": "Azacitidina",
+    "brand_name": "Vidaza®|Genéricos (Accord, Eurofarma)",
+    "concentration": "Frasco 100 mg (Pó)",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "6": {
+    "id": 6,
+    "name": "Bacilo de calmette guerin",
+    "brand_name": "Imuno BCG®|Onco BCG®",
+    "concentration": "Frasco 40 mg | 80 mg",
+    "sg5": "-",
+    "sf09": "Sim"
+  },
+  "7": {
+    "id": 7,
+    "name": "Belinostat",
+    "brand_name": "Beleodaq®",
+    "concentration": "Frasco 500 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "8": {
+    "id": 8,
+    "name": "Bendamustina",
+    "brand_name": "Ribomustin®|Bendamustina Genéricos",
+    "concentration": "Frasco 25 mg | 100 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "9": {
+    "id": 9,
+    "name": "Bevacizumabe",
+    "brand_name": "Avastin®|Mvasi®|Zirabev®|Oyaved®",
+    "concentration": "Frasco 100 mg | 400 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "10": {
+    "id": 10,
+    "name": "Bleomicina",
+    "brand_name": "Bonar®|Tecnomet®",
+    "concentration": "Frasco 15 UI",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "11": {
+    "id": 11,
+    "name": "Bortezomibe",
+    "brand_name": "Velcade®|Mielocade®|Genéricos",
+    "concentration": "Frasco 3.5 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "12": {
+    "id": 12,
+    "name": "Brentuximabe vedotina",
+    "brand_name": "Adcetris®",
+    "concentration": "Frasco 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "13": {
+    "id": 13,
+    "name": "Bussulfano",
+    "brand_name": "Busilvex®",
+    "concentration": "Frasco 60 mg/10 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "14": {
+    "id": 14,
+    "name": "Cabazitaxel",
+    "brand_name": "Jevtana®",
+    "concentration": "Frasco 60 mg/1.5 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "15": {
+    "id": 15,
+    "name": "Carboplatina",
+    "brand_name": "Paraplatin® (Histórico)|Genéricos (Accord, Blau)",
+    "concentration": "Frasco 50 | 150 | 450 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "16": {
+    "id": 16,
+    "name": "Carfilzomib",
+    "brand_name": "Kyprolis®",
+    "concentration": "Frasco 10 | 30 | 60 mg",
+    "sg5": "Sim",
+    "sf09": "Não"
+  },
+  "17": {
+    "id": 17,
+    "name": "Carmustina",
+    "brand_name": "Becenun®",
+    "concentration": "Frasco 100 mg",
+    "sg5": "Sim",
+    "sf09": "Não"
+  },
+  "18": {
+    "id": 18,
+    "name": "Cemiplimabe",
+    "brand_name": "Libtayo®",
+    "concentration": "Frasco 350 mg/7 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "19": {
+    "id": 19,
+    "name": "Cetuximabe",
+    "brand_name": "Erbitux®",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "20": {
+    "id": 20,
+    "name": "Ciclofosfamida",
+    "brand_name": "Genuxal®|Genéricos",
+    "concentration": "Frasco 200 mg | 1 g | 2 g",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "21": {
+    "id": 21,
+    "name": "Cisplatina",
+    "brand_name": "Platistine®|Genéricos",
+    "concentration": "Frasco 10 mg | 50 mg | 100 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "22": {
+    "id": 22,
+    "name": "Citarabina",
+    "brand_name": "Aracytin®|Genéricos",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "23": {
+    "id": 23,
+    "name": "Dacarbazina",
+    "brand_name": "Dacarb®|Genéricos",
+    "concentration": "Frasco 100 mg | 200 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "24": {
+    "id": 24,
+    "name": "Daratumumab",
+    "brand_name": "Darzalex®",
+    "concentration": "Frasco 100 mg | 400 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "25": {
+    "id": 25,
+    "name": "Docetaxel",
+    "brand_name": "Taxotere®|Genéricos",
+    "concentration": "Frasco 20 mg | 80 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "26": {
+    "id": 26,
+    "name": "Doxorrubicina",
+    "brand_name": "Adriblastina®|Fauldoxo®",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "27": {
+    "id": 27,
+    "name": "Etoposideo",
+    "brand_name": "Vepesid®|Etopul®",
+    "concentration": "Frasco 100 mg/5 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "28": {
+    "id": 28,
+    "name": "Fluorouracil",
+    "brand_name": "Genéricos (Faulding, Accord)",
+    "concentration": "Frasco 250 mg | 2.5 g | 5 g",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "29": {
+    "id": 29,
+    "name": "Gencitabina",
+    "brand_name": "Gemzar®|Genéricos",
+    "concentration": "Frasco 200 mg | 1 g | 2 g",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "30": {
+    "id": 30,
+    "name": "Ifosfamida",
+    "brand_name": "Holoxane®",
+    "concentration": "Frasco 1 g | 2 g",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "31": {
+    "id": 31,
+    "name": "Irinotecano",
+    "brand_name": "Camptosar®|Genéricos",
+    "concentration": "Frasco 40 mg | 100 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "32": {
+    "id": 32,
+    "name": "Nab-paclitaxel",
+    "brand_name": "Abraxane®",
+    "concentration": "Frasco 30 mg | 100 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "33": {
+    "id": 33,
+    "name": "Nivolumabe",
+    "brand_name": "Opdivo®",
+    "concentration": "Frasco 40 mg | 100 mg | 240 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "34": {
+    "id": 34,
+    "name": "Oxaliplatina",
+    "brand_name": "Eloxatin®|Genéricos",
+    "concentration": "Frasco 50 mg | 100 mg",
+    "sg5": "Sim",
+    "sf09": "Não"
+  },
+  "35": {
+    "id": 35,
+    "name": "Paclitaxel",
+    "brand_name": "Taxol®|Genéricos",
+    "concentration": "Frasco 30 mg | 100 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "36": {
+    "id": 36,
+    "name": "Pembrolizumabe",
+    "brand_name": "Keytruda®",
+    "concentration": "Frasco 100 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "37": {
+    "id": 37,
+    "name": "Pemetrexede",
+    "brand_name": "Alimta®|Genéricos",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "38": {
+    "id": 38,
+    "name": "Pertuzumabe",
+    "brand_name": "Perjeta®",
+    "concentration": "Frasco 420 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "39": {
+    "id": 39,
+    "name": "Rituximabe",
+    "brand_name": "MabThera®|Truxima®|Riximyo®|Vivaxxia®|Novex®",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "40": {
+    "id": 40,
+    "name": "Trastuzumabe",
+    "brand_name": "Herceptin®|Zedora®|Kanjinti®|Trazimera®|Herzuma®",
+    "concentration": "Frasco 150 mg | 440 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "41": {
+    "id": 41,
+    "name": "Vinorelbina",
+    "brand_name": "Navelbine®|Genéricos",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "42": {
+    "id": 42,
+    "name": "Avelumabe",
+    "brand_name": "Bavencio®",
+    "concentration": "Frasco 200 mg/10 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "43": {
+    "id": 43,
+    "name": "Bacilo de calmette guérin",
+    "brand_name": "-",
+    "concentration": "Frasco 40 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "44": {
+    "id": 44,
+    "name": "Betadinutuximabe",
+    "brand_name": "Qarziba®",
+    "concentration": "Frasco 20 mg/4,5 mL",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "45": {
+    "id": 45,
+    "name": "Blinatumomabe",
+    "brand_name": "Blincyto®",
+    "concentration": "Frasco 38.5 mcg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "46": {
+    "id": 46,
+    "name": "Cidofovir",
+    "brand_name": "Vistide®",
+    "concentration": "Frasco 375 mg/5 mL",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "47": {
+    "id": 47,
+    "name": "Cladribina",
+    "brand_name": "Leustatin®",
+    "concentration": "Frasco 10 mg/10 mL",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "48": {
+    "id": 48,
+    "name": "Dactinomicina",
+    "brand_name": "Cosmegen®",
+    "concentration": "Frasco 500 mcg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "49": {
+    "id": 49,
+    "name": "Daunorrubicina",
+    "brand_name": "Daunoblastina®",
+    "concentration": "Frasco 20 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "50": {
+    "id": 50,
+    "name": "Decitabina",
+    "brand_name": "Dacogen®",
+    "concentration": "Frasco 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "51": {
+    "id": 51,
+    "name": "Dostarlimabe",
+    "brand_name": "Jemperli®",
+    "concentration": "Frasco 500 mg/10 mL",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "52": {
+    "id": 52,
+    "name": "Doxorrubicina lipossomal",
+    "brand_name": "Caelyx®|Doxopeg®",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "53": {
+    "id": 53,
+    "name": "Durvalumabe",
+    "brand_name": "Imfinzi®",
+    "concentration": "Frasco 120 mg | 500 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "54": {
+    "id": 54,
+    "name": "Elotuzumabe",
+    "brand_name": "Empliciti®",
+    "concentration": "Frasco 300 mg | 400 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "55": {
+    "id": 55,
+    "name": "Elranatamabe",
+    "brand_name": "Elrexfio®",
+    "concentration": "Frasco 44 mg | 76 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "56": {
+    "id": 56,
+    "name": "Enfortumabe vedotina",
+    "brand_name": "Padcev®",
+    "concentration": "Frasco 20 mg | 30 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "57": {
+    "id": 57,
+    "name": "Epcoritamabe",
+    "brand_name": "Epkinly®",
+    "concentration": "Frasco 4 mg | 48 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "58": {
+    "id": 58,
+    "name": "Epirrubicina",
+    "brand_name": "Farmorubicina®",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "59": {
+    "id": 59,
+    "name": "Eribulina",
+    "brand_name": "Halaven®",
+    "concentration": "Frasco 0.88 mg",
+    "sg5": "Não",
+    "sf09": "Sim"
+  },
+  "60": {
+    "id": 60,
+    "name": "Etoposídeo",
+    "brand_name": "-",
+    "concentration": "Frasco 100 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "61": {
+    "id": 61,
+    "name": "Fludarabina",
+    "brand_name": "Fludara®",
+    "concentration": "Frasco 50 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "62": {
+    "id": 62,
+    "name": "Foscarnet",
+    "brand_name": "Foscavir®",
+    "concentration": "Frasco 6 g/250 mL",
+    "sg5": null,
+    "sf09": null
+  },
+  "63": {
+    "id": 63,
+    "name": "Fotemustine",
+    "brand_name": "Muphoran®",
+    "concentration": "Frasco 208 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "64": {
+    "id": 64,
+    "name": "Ganciclovir",
+    "brand_name": "Cymevene®",
+    "concentration": "Frasco 500 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "65": {
+    "id": 65,
+    "name": "Gentuzumabe ozogamicina",
+    "brand_name": "Mylotarg®",
+    "concentration": "Frasco 4.5 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "66": {
+    "id": 66,
+    "name": "Idarrubicina",
+    "brand_name": "Zavedos®",
+    "concentration": "Frasco 5 mg | 10 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "67": {
+    "id": 67,
+    "name": "Inotuzumabe ozogamicina",
+    "brand_name": "Besponsa®",
+    "concentration": "Frasco 1 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "68": {
+    "id": 68,
+    "name": "Interleucina",
+    "brand_name": "Proleukin®",
+    "concentration": "Frasco 18/22 M UI",
+    "sg5": null,
+    "sf09": null
+  },
+  "69": {
+    "id": 69,
+    "name": "Ipilimumabe",
+    "brand_name": "Yervoy®",
+    "concentration": "Frasco 50 mg | 200 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "70": {
+    "id": 70,
+    "name": "Isatuximabe",
+    "brand_name": "Sarclisa®",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "71": {
+    "id": 71,
+    "name": "Lurbinectedin",
+    "brand_name": "Zepzelca®",
+    "concentration": "Frasco 4 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "72": {
+    "id": 72,
+    "name": "Melfalano",
+    "brand_name": "Alkeran®",
+    "concentration": "Frasco 50 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "73": {
+    "id": 73,
+    "name": "Metotrexato",
+    "brand_name": "Mathera®|Genéricos",
+    "concentration": "Frasco 50 mg | 500 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "74": {
+    "id": 74,
+    "name": "Mitomicina",
+    "brand_name": "Mitocin®",
+    "concentration": "Frasco 5 mg | 20 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "75": {
+    "id": 75,
+    "name": "Mitoxantrona",
+    "brand_name": "Evomixan®|Genéricos",
+    "concentration": "Frasco 20 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "76": {
+    "id": 76,
+    "name": "Naxitamabe",
+    "brand_name": "Danyelza®",
+    "concentration": "Frasco 40 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "77": {
+    "id": 77,
+    "name": "Nivolumabe + relatlimabe",
+    "brand_name": "Opdualag®",
+    "concentration": "Frasco 40 mg | 100 mg | 240 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "78": {
+    "id": 78,
+    "name": "Obinutuzumabe",
+    "brand_name": "Gazyva®",
+    "concentration": "Frasco 1000 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "79": {
+    "id": 79,
+    "name": "Panitumumabe",
+    "brand_name": "Vectibix®",
+    "concentration": "Frasco 100 mg | 400 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "80": {
+    "id": 80,
+    "name": "Pegaspargase",
+    "brand_name": "Oncaspar®",
+    "concentration": "Frasco 3750 UI",
+    "sg5": null,
+    "sf09": null
+  },
+  "81": {
+    "id": 81,
+    "name": "Pertuzumabe + trastuzumabe",
+    "brand_name": "Phesgo®",
+    "concentration": "Frasco 150 mg | 440 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "82": {
+    "id": 82,
+    "name": "Polatuzumabe vedotina",
+    "brand_name": "Polivy®",
+    "concentration": "Frasco 30 mg | 140 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "83": {
+    "id": 83,
+    "name": "Ramucirumabe",
+    "brand_name": "Cyramza®",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "84": {
+    "id": 84,
+    "name": "Sacituzumabe govitecano",
+    "brand_name": "Trodelvy®",
+    "concentration": "Frasco 180 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "85": {
+    "id": 85,
+    "name": "Tafasitamabe",
+    "brand_name": "Monjuvi®",
+    "concentration": "Frasco 200 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "86": {
+    "id": 86,
+    "name": "Talquetamabe",
+    "brand_name": "Talvey®",
+    "concentration": "Frasco 2 mg | 40 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "87": {
+    "id": 87,
+    "name": "Tarlatamabe",
+    "brand_name": "Imdelltra®",
+    "concentration": "Frasco 1 mg | 10 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "88": {
+    "id": 88,
+    "name": "Tebentafusp",
+    "brand_name": "Kimmtrak®",
+    "concentration": "Frasco 100 mcg",
+    "sg5": null,
+    "sf09": null
+  },
+  "89": {
+    "id": 89,
+    "name": "Teclistamabe",
+    "brand_name": "Tecvayli®",
+    "concentration": "Frasco 30 mg | 153 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "90": {
+    "id": 90,
+    "name": "Temozolomida",
+    "brand_name": "Temodal®",
+    "concentration": "Frasco 100 mg (IV)",
+    "sg5": null,
+    "sf09": null
+  },
+  "91": {
+    "id": 91,
+    "name": "Tensirolimo",
+    "brand_name": "Torisel®",
+    "concentration": "Frasco 25 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "92": {
+    "id": 92,
+    "name": "Tiotepa",
+    "brand_name": "Tepadina®",
+    "concentration": "Frasco 15 mg | 100 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "93": {
+    "id": 93,
+    "name": "Topotecano",
+    "brand_name": "Hycamtin®",
+    "concentration": "Frasco 4 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "94": {
+    "id": 94,
+    "name": "Trabectedina",
+    "brand_name": "Yondelis®",
+    "concentration": "Frasco 1 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "95": {
+    "id": 95,
+    "name": "Trastuzumabe deruxtecan",
+    "brand_name": "Enhertu®",
+    "concentration": "Frasco 150 mg | 440 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "96": {
+    "id": 96,
+    "name": "Trastuzumabe entansina",
+    "brand_name": "Kadcyla®",
+    "concentration": "Frasco 150 mg | 440 mg",
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "97": {
+    "id": 97,
+    "name": "Tremelimumabe",
+    "brand_name": "Imjudo®",
+    "concentration": "Frasco 25 mg | 300 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "98": {
+    "id": 98,
+    "name": "Trióxido de arsênio",
+    "brand_name": "-",
+    "concentration": "Frasco 10 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "99": {
+    "id": 99,
+    "name": "Vedolizumabe",
+    "brand_name": "Entyvio®",
+    "concentration": "Frasco 300 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "100": {
+    "id": 100,
+    "name": "Vimblastina",
+    "brand_name": "Fauldblastina®",
+    "concentration": "Frasco 10 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "101": {
+    "id": 101,
+    "name": "Vincristina",
+    "brand_name": "Tecnocris®|Fauldvincri®",
+    "concentration": "Frasco 1 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "102": {
+    "id": 102,
+    "name": "Vinflunina",
+    "brand_name": "Javlor®",
+    "concentration": "Frasco 50 mg | 250 mg",
+    "sg5": null,
+    "sf09": null
+  },
+  "103": {
+    "id": 103,
+    "name": "Zolbetuximabe",
+    "brand_name": "Vyloy®",
+    "concentration": "Frasco 100 mg",
+    "sg5": null,
+    "sf09": null
+  }
+}

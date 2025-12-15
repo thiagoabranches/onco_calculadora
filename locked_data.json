@@ -1,0 +1,330 @@
+{
+  "1": {
+    "ref_name": "Aflibercepte",
+    "concentration": "Frasco 100 mg/4 mL | 200 mg/8 mL",
+    "concMin": 0.6,
+    "concMax": 8.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "2": {
+    "ref_name": "Alfapeginterferona 2a",
+    "concentration": "Seringa 180 mcg",
+    "concMin": 0.0,
+    "concMax": 0.0,
+    "sg5": "-",
+    "sf09": "-"
+  },
+  "3": {
+    "ref_name": "Amivantamabe",
+    "concentration": "Frasco 350 mg/7 mL",
+    "concMin": 0.5,
+    "concMax": 20.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "4": {
+    "ref_name": "Atezolizumabe",
+    "concentration": "Frasco 1200 mg | 840 mg",
+    "concMin": 3.2,
+    "concMax": 16.8,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "5": {
+    "ref_name": "Azacitidina",
+    "concentration": "Frasco 100 mg",
+    "concMin": 1.0,
+    "concMax": 4.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "6": {
+    "ref_name": "Bacilo de Calmette Guerin",
+    "concentration": "Frasco 40 mg",
+    "concMin": 0.0,
+    "concMax": 0.0,
+    "sg5": "-",
+    "sf09": "Sim"
+  },
+  "7": {
+    "ref_name": "Belinostat",
+    "concentration": "Frasco 500 mg",
+    "concMin": 1.0,
+    "concMax": 2.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "8": {
+    "ref_name": "Bendamustina",
+    "concentration": "Frasco 25 mg | 100 mg",
+    "concMin": 0.2,
+    "concMax": 0.6,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "9": {
+    "ref_name": "Bevacizumabe",
+    "concentration": "Frasco 100 mg | 400 mg",
+    "concMin": 1.4,
+    "concMax": 16.5,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "10": {
+    "ref_name": "Bleomicina",
+    "concentration": "Frasco 15 UI",
+    "concMin": 3.0,
+    "concMax": 15.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "11": {
+    "ref_name": "Bortezomibe",
+    "concentration": "Frasco 3.5 mg",
+    "concMin": 1.0,
+    "concMax": 2.5,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "12": {
+    "ref_name": "Brentuximabe vedotina",
+    "concentration": "Frasco 50 mg",
+    "concMin": 0.4,
+    "concMax": 1.8,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "13": {
+    "ref_name": "Bussulfano",
+    "concentration": "Frasco 60 mg",
+    "concMin": 0.5,
+    "concMax": 0.5,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "14": {
+    "ref_name": "Cabazitaxel",
+    "concentration": "Frasco 60 mg",
+    "concMin": 0.1,
+    "concMax": 0.26,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "15": {
+    "ref_name": "Carboplatina",
+    "concentration": "Frasco 50 | 150 | 450 mg",
+    "concMin": 0.5,
+    "concMax": 2.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "16": {
+    "ref_name": "Carfilzomib",
+    "concentration": "Frasco 10 | 30 | 60 mg",
+    "concMin": 2.0,
+    "concMax": 2.0,
+    "sg5": "Sim",
+    "sf09": "Nao"
+  },
+  "17": {
+    "ref_name": "Carmustina",
+    "concentration": "Frasco 100 mg",
+    "concMin": 0.2,
+    "concMax": 0.2,
+    "sg5": "Sim",
+    "sf09": "Nao"
+  },
+  "18": {
+    "ref_name": "Cemiplimabe",
+    "concentration": "Frasco 350 mg",
+    "concMin": 1.0,
+    "concMax": 20.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "19": {
+    "ref_name": "Cetuximabe",
+    "concentration": "Frasco 100 | 500 mg",
+    "concMin": 5.0,
+    "concMax": 5.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "20": {
+    "ref_name": "Ciclofosfamida",
+    "concentration": "Frasco 1g | 200 mg",
+    "concMin": 2.0,
+    "concMax": 20.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "21": {
+    "ref_name": "Cisplatina",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "concMin": 0.5,
+    "concMax": 1.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "22": {
+    "ref_name": "Citarabina",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "concMin": 0.1,
+    "concMax": 100.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "23": {
+    "ref_name": "Dacarbazina",
+    "concentration": "Frasco 100 mg | 200 mg",
+    "concMin": 1.5,
+    "concMax": 4.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "24": {
+    "ref_name": "Daratumumab",
+    "concentration": "Frasco 100 mg | 400 mg",
+    "concMin": 0.4,
+    "concMax": 3.6,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "25": {
+    "ref_name": "Docetaxel",
+    "concentration": "Frasco 20 mg | 80 mg",
+    "concMin": 0.3,
+    "concMax": 0.74,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "26": {
+    "ref_name": "Doxorrubicina",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "concMin": 0.0,
+    "concMax": 0.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "27": {
+    "ref_name": "Etoposideo",
+    "concentration": "Frasco 100 mg",
+    "concMin": 0.2,
+    "concMax": 0.4,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "28": {
+    "ref_name": "Fluorouracil",
+    "concentration": "Frasco 250 mg | 2.5 g",
+    "concMin": 25.0,
+    "concMax": 25.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "29": {
+    "ref_name": "Gencitabina",
+    "concentration": "Frasco 200 mg | 1 g",
+    "concMin": 0.1,
+    "concMax": 38.0,
+    "sg5": "Nao",
+    "sf09": "Sim"
+  },
+  "30": {
+    "ref_name": "Ifosfamida",
+    "concentration": "Frasco 1 g",
+    "concMin": 0.6,
+    "concMax": 20.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "31": {
+    "ref_name": "Irinotecano",
+    "concentration": "Frasco 40 mg | 100 mg",
+    "concMin": 0.12,
+    "concMax": 2.8,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "32": {
+    "ref_name": "Nab-paclitaxel",
+    "concentration": "Frasco 100 mg",
+    "concMin": 5.0,
+    "concMax": 5.0,
+    "sg5": "Nao",
+    "sf09": "Nao"
+  },
+  "33": {
+    "ref_name": "Nivolumabe",
+    "concentration": "Frasco 40 mg | 100 mg",
+    "concMin": 1.0,
+    "concMax": 10.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "34": {
+    "ref_name": "Oxaliplatina",
+    "concentration": "Frasco 50 mg | 100 mg",
+    "concMin": 0.2,
+    "concMax": 2.0,
+    "sg5": "Sim",
+    "sf09": "Nao"
+  },
+  "35": {
+    "ref_name": "Paclitaxel",
+    "concentration": "Frasco 30 mg | 100 mg",
+    "concMin": 0.3,
+    "concMax": 1.2,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "36": {
+    "ref_name": "Pembrolizumabe",
+    "concentration": "Frasco 100 mg",
+    "concMin": 1.0,
+    "concMax": 10.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "37": {
+    "ref_name": "Pemetrexede",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "concMin": 0.0,
+    "concMax": 0.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "38": {
+    "ref_name": "Pertuzumabe",
+    "concentration": "Frasco 420 mg",
+    "concMin": 1.68,
+    "concMax": 3.36,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "39": {
+    "ref_name": "Rituximabe",
+    "concentration": "Frasco 100 mg | 500 mg",
+    "concMin": 1.0,
+    "concMax": 4.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "40": {
+    "ref_name": "Trastuzumabe",
+    "concentration": "Frasco 150 mg | 440 mg",
+    "concMin": 0.4,
+    "concMax": 4.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  },
+  "41": {
+    "ref_name": "Vinorelbina",
+    "concentration": "Frasco 10 mg | 50 mg",
+    "concMin": 1.5,
+    "concMax": 3.0,
+    "sg5": "Sim",
+    "sf09": "Sim"
+  }
+}

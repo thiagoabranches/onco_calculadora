@@ -1,0 +1,103 @@
+name,category,class,concentracaoPadrao,concMin,concMax,diluentVolume,specialCalculator,concentration,sg5,sf09,tissueDamage,cytotoxic,stabilityDiluted
+Fármaco,Outros,Outros,0.0,0.0,0.0,250.0,,[ ] do produto,Não,Não,Neutro,Não,Estab. após diluição
+aflibercepte,Outros,Outros,25.0,0.8,8.0,250.0,,25mg/ml,Sim,Sim,Neutro,Não,8hTA/ 24hSR¹
+alfapeginterferona 2a recombinante,Outros,Outros,360.0,72.0,720.0,250.0,,360mcg/mL,Não,Não,Vesicante,Sim,Uso imediato1
+amivantamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,50.0,10.0,100.0,250.0,,50mg/ml,Sim,Sim,Neutro,Sim,10hrs TA¹ (do início do preparo ao término da infusão)
+atezolizumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,60.0,0.4,4.0,250.0,,60mg/ml,Não,Sim,Vesicante,Sim,8h TA 24h SR
+avelumabe,Anticorpos Monoclonais,Inibidores de Checkpoint Imunológico,20.0,4.0,40.0,250.0,,20mg/ml¹,Não,Não,Vesicante,Sim,24h SR¹
+azacitidina,Quimioterápicos Clássicos,Antimetabólitos,25.0,0.30000000000000004,3.0,100.0,,SC: 25mg/ml 1 EV: 10mg/ml7,Não,Sim,Vesicante,Sim,SC: 1h TA e 22 h SR ¹ IV: 1h TA 3
+Bacilo de Calmette Guérin,Outros,Outros,50.0,10.0,100.0,50.0,,50mg/ml¹,Não,Sim,Neutro,Não,Uso imediato¹
+belinostat,Outros,Outros,50.0,10.0,100.0,250.0,,50mg/ml¹,Não,Sim,Neutro,Não,36h TA (incluindo tempo de infusão)
+bendamustina,Outros,Alquilantes,5.0,1.0,10.0,500.0,,"2,5 mg / ml",Não,Sim,Neutro,Sim,"3,5 h TA 48h SR¹"
+betadinutuximabe,Anticorpos Monoclonais,Anticorpos Monoclonais,5.0,1.0,10.0,8.0,,"4,5mg/ml",Não,Sim,Neutro,Sim,24hrs SR¹
+bevacizumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,25.0,0.5,5.0,1000.0,,25mg/ml ¹,Não,Sim,Vesicante,Sim,24h SR ¹
+bleomicina,Quimioterápicos Clássicos,Agentes Diversos,3.0,0.6000000000000001,6.0,100.0,,3UI/ml,Não,Sim,Irritante,Sim,24hTA¹
+blinatumomabe,Anticorpos Monoclonais,Anticorpos Monoclonais,5.0,1.0,10.0,270.0,,"12,5mcg/ml",Não,Sim,Vesicante,Sim,96h TA/ 10 dias SR
+bortezomibe,Outros,Outros,1.0,0.0,0.0,50.0,,"EV: 1mg/ml SC: 2,5mg/ml",Não,Sim,Neutro,Não,3h TA até 25ºC
+brentuximabe vedotina,Anticorpos Monoclonais,Conjugados Anticorpo-Fármaco,5.0,0.8,8.0,100.0,,5mg/ml,Sim,Sim,Vesicante,Sim,24h SR ¹
+bussulfano,Quimioterápicos Clássicos,Outros,6.0,0.5,5.0,5.0,,6mg/mL,Sim,Sim,Vesicante,Sim,8h TA ¹ 12h SR + 3h TA¹ 24hrs SR Bolsa isenta
+cabazitaxel,Quimioterápicos Clássicos,Taxanos,10.0,2.6,26.0,250.0,,10mg/ml ¹,Sim,Sim,Vesicante,Sim,8h TA¹ 48h SR ¹
+carboplatina (CBDCA),Quimioterápicos Clássicos,Derivados da Platina,10.0,0.2,2.0,50.0,auc,10mg/ml 1,Sim,Sim,Irritante,Sim,24h SR 1
+carfilzomib,Quimioterápicos Clássicos,Outros,2.0,0.4,4.0,50.0,,2mg/ml 1,Sim,Não,Vesicante,Sim,4h TA 24 SR1
+Carmustina,Quimioterápicos Clássicos,Alquilantes,3.0,0.2,2.0,500.0,,"3,3mg/ml",Sim,Sim,Irritante,Sim,"24h SR e depois por 6h adicionais, se mantida à temperatura ambiente (25°C). Se armazenada SOMENTE à temperatura ambiente deve ser utilizada dentro de 3h¹"
+cemiplimabe,Anticorpos Monoclonais,Anticorpos Monoclonais,50.0,0.1,1.0,100.0,,50mg/ml,Sim,Sim,Neutro,Não,8h TA / 24h SR¹
+cetuximabe,Anticorpos Monoclonais,Anticorpos Monoclonais,5.0,1.0,10.0,250.0,,5mg/ml¹,Não,Não,Vesicante,Sim,48h SR ¹
+ciclofosfamida (CTX),Quimioterápicos Clássicos,Alquilantes,20.0,4.0,40.0,250.0,,20mg/ml¹,Sim,Sim,Vesicante,Sim,24H SR¹
+cidofovir,Outros,Outros,75.0,15.0,150.0,100.0,,75ml/ml 1,Não,Sim,Neutro,Não,24h TA 1
+cisplatina (CDDP),Quimioterápicos Clássicos,Derivados da Platina,1.0,0.2,2.0,1000.0,renal,1mg/ml,Sim,Sim,Vesicante,Sim,24h TA¹ proteger da luz¹
+citarabina ARA-C,Quimioterápicos Clássicos,Antimetabólitos,100.0,10.0,100.0,500.0,,100mg/ml 1,Sim,Sim,Irritante,Sim,24h TA 1
+cladribina (2CDA),Quimioterápicos Clássicos,Outros,1.0,0.2,2.0,500.0,,1 mg/ml,Não,Sim,Irritante,Sim,8h SR + 24h TA (tempo de infusão)1
+dacarbazina (DTIC),Quimioterápicos Clássicos,Alquilantes,10.0,1.0,10.0,500.0,,10 mg/ml¹,Sim,Sim,Irritante,Sim,24h SR1
+dactinomicina (ACT-D),Quimioterápicos Clássicos,Agentes Diversos,500.0,1.0,10.0,50.0,,500 mcg/mL1,Sim,Sim,Vesicante,Sim,4h TA1
+daratumumab,Anticorpos Monoclonais,Outros,20.0,4.0,40.0,1.0,,20mg/mL,Não,Sim,Vesicante,Sim,15h TA / 24h SR¹
+daunorrubicina (DAUNO),Quimioterápicos Clássicos,Antraciclinas,2.0,0.4,4.0,1.0,,2 mg/ml¹,Sim,Sim,Vesicante,Sim,48h TA¹
+decitabina,Quimioterápicos Clássicos,Antimetabólitos,5.0,0.1,1.0,100.0,,5mg/ml,Sim,Sim,Vesicante,Sim,4h SR1
+docetaxel,Quimioterápicos Clássicos,Taxanos,20.0,7.4,74.0,250.0,,20mg/ml1,Sim,Sim,Irritante,Sim,6h TA Se bolsa isenta de PVC 48h SR¹
+dostarlimabe,Anticorpos Monoclonais,Anticorpos Monoclonais,50.0,0.2,2.0,500.0,,50mg/ml¹,Sim,Sim,Vesicante,Sim,24h SR¹ 6h TA¹
+doxorrubicina,Quimioterápicos Clássicos,Antraciclinas,2.0,0.2,2.0,50.0,,2mg/ml1,Sim,Sim,Vesicante,Sim,48h TA/SR
+doxorrubicina lipossomal,Quimioterápicos Clássicos,Antraciclinas,2.0,0.4,4.0,90.0,,2 mg/mL1,Sim,Não,Irritante,Sim,24 h SR 1
+durvalumabe,Anticorpos Monoclonais,Inibidores de Checkpoint Imunológico,50.0,1.5,15.0,250.0,,50mg/ml¹,Não,Sim,Neutro,Não,4h TA¹ 24h SR¹
+elotuzumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,25.0,0.6000000000000001,6.0,250.0,,25mg/ml¹,Sim,Sim,Neutro,Não,24h SR¹ Protegido da luz¹
+elranatamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,40.0,8.0,80.0,250.0,,40mg/ml,Não,Não,Vesicante,Sim,24hrs TA Seringa
+enfortumabe vedotina,Anticorpos Monoclonais,Conjugados Anticorpo-Fármaco,10.0,0.30000000000000004,3.0,100.0,,10mg/ml¹,Sim,Sim,Irritante,Sim,16h SR ¹
+epcoritamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,5.0,1.0,10.0,250.0,,5mg/1ml 60mg/1ml,Não,Não,Neutro,Não,24h SR 12h TA
+epirrubicina (EPI),Quimioterápicos Clássicos,Antraciclinas,2.0,0.4,4.0,200.0,,2mg/ml¹,Sim,Sim,Vesicante,Sim,24h TA 48h SR
+eribulina,Outros,Outros,5.0,0.2,2.0,100.0,,"0,5mg/ml",Não,Não,Neutro,Não,4h TA 24h SR ¹
+etoposídeo (VP-16),Quimioterápicos Clássicos,Outros,20.0,0.2,2.0,50.0,,20mg/ml 1,Sim,Sim,Irritante,Sim,EV: SF 24h TA/SR SG 48h TA/SR VO: 28 dias SR
+fludarabina,Quimioterápicos Clássicos,Antimetabólitos,25.0,5.0,50.0,100.0,,25mg/mL¹,Sim,Sim,Irritante,Sim,8h TA¹
+Fluorouracil (5-FU),Quimioterápicos Clássicos,Antimetabólitos,50.0,10.0,100.0,100.0,,50 mg/ml¹,Sim,Sim,Irritante,Sim,48h TA2
+foscarnet,Quimioterápicos Clássicos,Outros,24.0,4.800000000000001,48.0,100.0,,24mg/ml¹,Sim,Sim,Vesicante,Sim,24h SR¹
+fotemustine,Quimioterápicos Clássicos,Outros,50.0,10.0,100.0,250.0,,50 mg/ml1,Sim,Não,Vesicante,Sim,1h TA1
+ganciclovir,Quimioterápicos Clássicos,Outros,50.0,1.0,10.0,100.0,,50 mg1,Sim,Sim,Vesicante,Sim,24 horas TA/SR1
+gencitabina,Outros,Outros,38.0,4.0,40.0,250.0,,38 mg/ml1,Não,Sim,Neutro,Não,24 horas TA1
+gentuzumabe ozogamicina,Anticorpos Monoclonais,Outros,1.0,7.5,75.0,9.0,,1mg/ml¹,Não,Sim,Vesicante,Sim,18h SR 6h TA
+idarrubicina (IDA),Quimioterápicos Clássicos,Antraciclinas,1.0,0.2,2.0,100.0,,1mg/ml,Sim,Sim,Vesicante,Sim,24h TA 1 48h SR1
+ifosfamida (IFO),Quimioterápicos Clássicos,Alquilantes,40.0,4.0,40.0,500.0,renal,40 mg/ml1,Sim,Sim,Irritante,Sim,24h SR seguido de 24h TA1
+inotuzumabe ozogamicina,Anticorpos Monoclonais,Outros,25.0,0.1,1.0,50.0,,"0,25 mg / ml",Não,Sim,Vesicante,Sim,8h SR/TA
+interleucina (aldesleukin),Quimioterápicos Clássicos,Outros,18.0,0.30000000000000004,3.0,5.0,,18M UI/ml,Sim,Não,Vesicante,Sim,48h SR¹ 5 dias SR¹ (seringa)
+ipilimumabe,Anticorpos Monoclonais,Inibidores de Checkpoint Imunológico,5.0,0.4,4.0,400.0,,5mg/ml¹,Sim,Sim,Vesicante,Sim,24h SR¹
+irinotecano (CPT-11),Quimioterápicos Clássicos,Inibidores da Topoisomerase,20.0,1.2000000000000002,12.0,500.0,,20mg/ml1,Sim,Sim,Irritante,Sim,"24h TA (SF0,9% e SG5%) 48h SR (SG5%) protegido da luz 1"
+isatuximabe,Anticorpos Monoclonais,Anticorpos Monoclonais,20.0,4.0,40.0,250.0,,20 mg/ml,Sim,Sim,Vesicante,Sim,48h SR¹
+lurbinectedin,Quimioterápicos Clássicos,Outros,5.0,1.0,10.0,250.0,,"0,5 mg/ml¹",Sim,Sim,Vesicante,Sim,24h SR/TA¹
+melfalano,Quimioterápicos Clássicos,Outros,5.0,4.5,45.0,110.0,,5 mg/ml1,Não,Sim,Irritante,Sim,1h30TA (reconstituição + diluição + administração)
+metotrexato (MTX),Quimioterápicos Clássicos,Antimetabólitos,25.0,5.0,50.0,100.0,,25 mg/ml1,Não,Não,Vesicante,Sim,24h TA1
+mitoxantrona,Quimioterápicos Clássicos,Outros,2.0,0.4,4.0,100.0,,2mg/mL ¹,Sim,Sim,Vesicante,Sim,48h TA ¹
+mitomicina,Quimioterápicos Clássicos,Outros,5.0,1.0,10.0,100.0,,"0,5mg/ml¹",Sim,Sim,Vesicante,Sim,SG = Uso imediato SF= 8hr /TA Lactado = 8hr /TA1
+nab - paclitaxel,Quimioterápicos Clássicos,Taxanos,5.0,1.0,10.0,250.0,,5 mg/ml¹,Sim,Sim,Irritante,Sim,12h TA ³
+naxitamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,4.0,0.6000000000000001,6.0,80.0,,4 mg/ml¹,Não,Sim,Neutro,Sim,8h TA¹ 24h SR¹
+nivolumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,10.0,0.1,1.0,100.0,,10mg/ml1,Sim,Sim,Vesicante,Sim,"24h SR1 max. 4h TA a luz ambiente, este tempo deve ser descontado das 24h SR1"
+nivolumabe + relatlimabe,Anticorpos Monoclonais,Anticorpos Monoclonais,16.0,0.30000000000000004,3.0,100.0,,16mg/ml1,Sim,Sim,Vesicante,Sim,24h SR¹
+obinutuzumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,25.0,5.0,50.0,100.0,,25mg/mL¹,Não,Sim,Vesicante,Sim,24h SR¹
+oxaliplatina,Quimioterápicos Clássicos,Derivados da Platina,5.0,0.5,5.0,100.0,,5mg/ml1,Sim,Não,Vesicante,Sim,48h SR¹
+paclitaxel,Quimioterápicos Clássicos,Taxanos,6.0,0.2,2.0,30.0,,6mg/ml 1,Sim,Sim,Irritante,Sim,27h TA 1
+panitumumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,20.0,1.0,10.0,1000.0,,20 mg/ml,Não,Sim,Vesicante,Sim,24h SR1
+pegaspargase,Quimioterápicos Clássicos,Outros,750.0,0.30000000000000004,3.0,100.0,,750 UI/mL¹,Sim,Sim,Vesicante,Sim,48hrs SR¹
+pembrolizumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,25.0,1.0,10.0,100.0,,25mg/ml1,Sim,Sim,Vesicante,Sim,6h TA 24h SR1
+pemetrexede,Quimioterápicos Clássicos,Outros,25.0,5.0,50.0,100.0,,25mg/ml,Não,Sim,Vesicante,Sim,48h SR1
+pertuzumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,30.0,3.6,36.0,250.0,,30mg/mL,Não,Sim,Vesicante,Sim,24h SR
+pertuzumabe + trastuzumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,120.0,24.0,240.0,250.0,,120mg/ml¹,Não,Não,Vesicante,Sim,48h SR / 24h TA¹
+polatuzumabe vedotina,Anticorpos Monoclonais,Outros,20.0,0.7000000000000001,7.0,100.0,,20mg/ml¹,Sim,Sim,Neutro,Não,36hrs SR / 6hrs TA
+ramucirumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,10.0,0.4,4.0,1000.0,,10mg/ml¹,Não,Sim,Vesicante,Sim,24h SR¹
+rituximab,Anticorpos Monoclonais,Outros,10.0,0.4,4.0,500.0,,10mg/ml,Sim,Sim,Vesicante,Sim,24hSR + 12hTA1
+sacituzumabe govitecano,Anticorpos Monoclonais,Outros,10.0,0.1,1.0,500.0,,10mg/ml,Não,Sim,Neutro,Sim,24h SR protegida da luz¹ + 8h TA¹
+tafasitamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,40.0,0.2,2.0,250.0,,40mg/ml,Não,Sim,Vesicante,Sim,36hrs SR 24hrs TA¹
+talquetamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,2.0,0.2,2.0,250.0,,2mg/ml 40mg/ml,Não,Não,Vesicante,Sim,24h SR¹ (na seringa)
+tarlatamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,9.0,1.8,18.0,250.0,,"0,9mg/ml 2,4mg/ml",Não,Sim,Vesicante,Sim,4h TA 48h SR
+tebentafusp,Quimioterápicos Clássicos,Outros,200.0,40.0,400.0,100.0,,200mcg/ml,Não,Sim,Vesicante,Sim,4h TA¹ 24h SR¹
+teclistamabe,Anticorpos Monoclonais,Anticorpos Monoclonais,10.0,0.2,2.0,250.0,,10mg/ml (fr 30mg) 90mg/ml (fr 153mg),Não,Não,Vesicante,Sim,20h TA¹
+temozolomida,Quimioterápicos Clássicos,Alquilantes,5.0,1.0,10.0,100.0,,"2,5mg/ml1",Não,Não,Vesicante,Sim,14h TA incluindo o tempo de infusão1
+tensirolimo,Quimioterápicos Clássicos,Outros,10.0,2.0,20.0,250.0,,10 mg/ml 1,Não,Sim,Vesicante,Sim,6h TA 1
+tiotepa,Quimioterápicos Clássicos,Outros,10.0,0.1,1.0,500.0,,10 mg/ml¹,Não,Sim,Irritante,Sim,4h TA ¹ 24h SR1
+trabectedina,Quimioterápicos Clássicos,Outros,5.0,1.0,10.0,500.0,,"0,05 mg/ml¹",Sim,Sim,Vesicante,Sim,30h TA 1 (Da reconstituição até o término da infusão)
+trastuzumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,21.0,4.2,42.0,250.0,,21 mg/ml 1,Não,Sim,Vesicante,Sim,24h TA/SR 1
+trastuzumab deruxtecan,Anticorpos Monoclonais,Outros,20.0,4.0,40.0,100.0,,20 mg/mL1,Sim,Não,Neutro,Sim,24h SR (protegido da luz) ¹
+trastuzumab entansina,Anticorpos Monoclonais,Outros,20.0,4.0,40.0,250.0,,20 mg/mL,Não,Sim,Vesicante,Sim,24h SR 5
+tremelimumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,20.0,0.1,1.0,250.0,,20mg/ml,Sim,Sim,Vesicante,Sim,24h SR 5
+trióxido de arsênio,Outros,Outros,2.0,0.4,4.0,100.0,,2mg/ml,Sim,Sim,Neutro,Não,24h TA 48h SR
+topotecano,Quimioterápicos Clássicos,Inibidores da Topoisomerase,1.0,0.2,2.0,100.0,,1 mg/ml 1,Sim,Sim,Irritante,Sim,24h SR¹
+vedolizumabe,Anticorpos Monoclonais,Anticorpos Monoclonais,60.0,12.0,120.0,250.0,,60mg/ml¹,Não,Sim,Vesicante,Sim,12h TA 24h SR
+vimblastina,Quimioterápicos Clássicos,Outros,1.0,0.2,2.0,100.0,,1mg/ml¹,Sim,Sim,Vesicante,Sim,uso imediato¹
+vinorelbina,Quimioterápicos Clássicos,Vinca Alcalóides,10.0,2.0,20.0,50.0,,10mg/mL,Sim,Sim,Vesicante,Sim,24 h SR
+vincristina (VCR),Quimioterápicos Clássicos,Vinca Alcalóides,1.0,0.1,1.0,50.0,,1mg/ml1,Não,Sim,Vesicante,Sim,48h SR 1
+vinflunina,Quimioterápicos Clássicos,Outros,25.0,5.0,50.0,100.0,,25 mg/ml 1,Sim,Sim,Irritante,Sim,24h TA 48hSR proteger da luz 1h TA sem proteção da luz 1
+zolbetuximabe,Anticorpos Monoclonais,Anticorpos Monoclonais,20.0,0.2,2.0,5.0,,20mg/ml¹,Não,Sim,Neutro,Sim,24h SR 6h TA¹

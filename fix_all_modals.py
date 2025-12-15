@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_code = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -366,7 +368,7 @@
                     let pres = m.concentration || '-'; if (pres.includes('|')) pres = pres.replace(/\|/g, '<br>');
                     
                     let stabRaw = `Rec: ${m.stability_reconst}<br>Dil: ${m.stability_diluted}`;
-                    let safeStab = stabRaw.replace(/'/g, "\'").replace(/"/g, "&quot;").replace(/\n/g, " ");
+                    let safeStab = stabRaw.replace(/'/g, "\\'").replace(/"/g, "&quot;").replace(/\\n/g, " ");
                     let icons = [
                         `<span class="icon-btn text-slate-500 hover:text-blue-600" onclick="App.modalParams(${m.id})" oncontextmenu="App.quickParams(event, ${m.id}); return false;">📋</span>`,
                         `<span class="icon-btn phys-icon" onclick="App.modalPhys(${m.id})" oncontextmenu="App.quickPhys(event, ${m.id}); return false;">ℹ️</span>`,
@@ -489,3 +491,7 @@
     </script>
 </body>
 </html>
+"""
+
+with open("templates/index.html", "w", encoding="utf-8") as f:
+    f.write(html_code)

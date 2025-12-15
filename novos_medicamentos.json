@@ -1,0 +1,431 @@
+[
+    {
+        "name": "Carboplatina",
+        "category": "Quimioterápicos Clássicos",
+        "class": "Platina",
+        "concentration": "10 mg/mL",
+        "concentracaoPadrao": 10.0,
+        "diluentVolume": 250,
+        "specialCalculator": "auc",
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "tissueDamage": "Irritante",
+        "stabilityDiluted": "24h TA",
+        "observations": "Fórmula de Calvert. Compatível com vidro e PVC."
+    },
+    {
+        "name": "Cisplatina",
+        "category": "Quimioterápicos Clássicos",
+        "class": "Platina",
+        "concentration": "1 mg/mL",
+        "concentracaoPadrao": 1.0,
+        "diluentVolume": 500,
+        "specialCalculator": "renal",
+        "sg5": "Não",
+        "sf09": "Sim",
+        "tissueDamage": "Vesicante",
+        "stabilityDiluted": "24h TA",
+        "observations": "Requer Cloreto. Proteger da luz."
+    },
+    {
+        "name": "Ácido Zoledrônico",
+        "category": "Agente de Suporte",
+        "class": "Bisfosfonato",
+        "concentration": "4 mg/5mL",
+        "concentracaoPadrao": 0.8,
+        "diluentVolume": 100,
+        "specialCalculator": "zoledronic",
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "tissueDamage": "Irritante",
+        "stabilityDiluted": "24h RF",
+        "observations": "Ajuste obrigatório pelo ClCr."
+    },
+    {
+        "name": "Cidofovir",
+        "category": "Agente de Suporte",
+        "concentracaoPadrao": 75.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Foscarnet",
+        "category": "Agente de Suporte",
+        "concentracaoPadrao": 24.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "Uso imediato"
+    },
+    {
+        "name": "Ganciclovir",
+        "category": "Agente de Suporte",
+        "concentracaoPadrao": 50.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Aflibercepte",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Amivantamabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 50.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "10h TA"
+    },
+    {
+        "name": "Atezolizumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 60.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Avelumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Bevacizumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "48h RF"
+    },
+    {
+        "name": "Blinatumomabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 0.038,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "96h RF"
+    },
+    {
+        "name": "Brentuximabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Cetuximabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 2.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "12h RF"
+    },
+    {
+        "name": "Daratumumab",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Durvalumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 50.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Elotuzumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Epcoritamabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Não",
+        "sf09": "Não",
+        "stabilityDiluted": "-"
+    },
+    {
+        "name": "Ipilimumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Nivolumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Pembrolizumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Pertuzumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 30.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Ramucirumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Rituximabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Trastuzumabe",
+        "category": "Anticorpos Monoclonais",
+        "concentracaoPadrao": 21.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "28 dias RF"
+    },
+    {
+        "name": "Azacitidina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Não",
+        "sf09": "Não",
+        "stabilityDiluted": "45 min TA"
+    },
+    {
+        "name": "Bendamustina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "3h TA"
+    },
+    {
+        "name": "Bleomicina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 15.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA"
+    },
+    {
+        "name": "Bortezomibe",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 1.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "8h TA"
+    },
+    {
+        "name": "Cabazitaxel",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "48h TA"
+    },
+    {
+        "name": "Ciclofosfamida",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Citarabina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA"
+    },
+    {
+        "name": "Dacarbazina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "8h TA"
+    },
+    {
+        "name": "Dactinomicina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 0.5,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "Imediato"
+    },
+    {
+        "name": "Daunorrubicina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Docetaxel",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "4h TA"
+    },
+    {
+        "name": "Doxorrubicina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 2.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "48h RF"
+    },
+    {
+        "name": "Epirrubicina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 2.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Etoposídeo",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA"
+    },
+    {
+        "name": "Fludarabina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Fluorouracil",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 50.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA"
+    },
+    {
+        "name": "Gencitabina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 38.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA",
+        "maxDose": 2000,
+        "maxDoseMessage": "Atenção: Dose teto habitual 2000mg"
+    },
+    {
+        "name": "Ifosfamida",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 50.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF",
+        "specialCalculator": "renal"
+    },
+    {
+        "name": "Irinotecano",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 20.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h TA"
+    },
+    {
+        "name": "Oxaliplatina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 5.0,
+        "sg5": "Sim",
+        "sf09": "Não",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Paclitaxel",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 6.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "27h TA"
+    },
+    {
+        "name": "Pemetrexede",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 25.0,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    },
+    {
+        "name": "Temozolomida",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 2.5,
+        "sg5": "Não",
+        "sf09": "Sim",
+        "stabilityDiluted": "14h TA"
+    },
+    {
+        "name": "Vinblastina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 1.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "30 dias RF"
+    },
+    {
+        "name": "Vincristina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 1.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "30 dias RF"
+    },
+    {
+        "name": "Vinorelbina",
+        "category": "Quimioterápicos Clássicos",
+        "concentracaoPadrao": 10.0,
+        "sg5": "Sim",
+        "sf09": "Sim",
+        "stabilityDiluted": "24h RF"
+    }
+]

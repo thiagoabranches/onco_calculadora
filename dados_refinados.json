@@ -1,0 +1,810 @@
+[
+  {
+    "principio_ativo": "Aflibercepte",
+    "classe": "Antiangiogênico (Anti-VEGF)",
+    "marcas": ["Zaltrap"],
+    "apresentacao_frasco": "Frascos de 100 mg/4 mL e 200 mg/8 mL (Solução 25 mg/mL)",
+    "intervalo_concentracao_infusao": "0.6 - 8.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Alfapeginterferona 2a",
+    "classe": "Imunoestimulante",
+    "marcas": ["Pegasys"],
+    "apresentacao_frasco": "Seringa preenchida 180 mcg/0,5 mL",
+    "intervalo_concentracao_infusao": "Uso SC direto (Sem diluição)",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Amivantamabe",
+    "classe": "Anticorpo Bispecífico (EGFR x MET)",
+    "marcas": [],
+    "apresentacao_frasco": "Frasco 350 mg/7 mL (Solução 50 mg/mL)",
+    "intervalo_concentracao_infusao": "0.5 - 20.0 mg/mL",
+    "diluente_padrao": "Glicose 5% ou NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Atezolizumabe",
+    "classe": "Anti-PD-L1",
+    "marcas": [],
+    "apresentacao_frasco": "Frascos de 1200 mg/20 mL e 840 mg/14 mL (Solução 60 mg/mL)",
+    "intervalo_concentracao_infusao": "3.2 - 16.8 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Avelumabe",
+    "classe": "Anti-PD-L1",
+    "marcas": [],
+    "apresentacao_frasco": "Frasco 200 mg/10 mL (Solução 20 mg/mL)",
+    "intervalo_concentracao_infusao": "0.5 - 5.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou 0,45%"
+  },
+  {
+    "principio_ativo": "Azacitidina",
+    "classe": "Hipometilante",
+    "marcas": ["Vidaza", "Genéricos (Accord, Eurofarma)"],
+    "apresentacao_frasco": "Pó liofilizado 100 mg",
+    "intervalo_concentracao_infusao": "SC: 25 mg/mL (Fixo) | IV: 1.0 - 4.0 mg/mL",
+    "diluente_padrao": "Água para injetáveis (Reconst.) / NaCl 0,9% (Diluição IV)"
+  },
+  {
+    "principio_ativo": "Bacilo de Calmette Guérin (BCG)",
+    "classe": "Imunoterápico Biológico",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 40 mg ou 80 mg",
+    "intervalo_concentracao_infusao": "~0.8 - 1.6 mg/mL (Instilação Intravesical)",
+    "diluente_padrao": "NaCl 0,9% (50 mL)"
+  },
+  {
+    "principio_ativo": "Belinostat",
+    "classe": "Inibidor de HDAC",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 500 mg",
+    "intervalo_concentracao_infusao": "1.0 - 2.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Bendamustina",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 25 mg e 100 mg",
+    "intervalo_concentracao_infusao": "0.2 - 0.6 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Betadinutuximabe",
+    "classe": "Anti-GD2",
+    "marcas": ["Qarziba"],
+    "apresentacao_frasco": "Frasco 20 mg/4,5 mL (Solução 4.5 mg/mL)",
+    "intervalo_concentracao_infusao": "Variável (Infusão contínua)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Bevacizumabe",
+    "classe": "Anti-VEGF",
+    "marcas": ["Avastin", "Mvasi", "Zirabev", "Oyaved"],
+    "apresentacao_frasco": "Frascos de 100 mg/4 mL e 400 mg/16 mL (Solução 25 mg/mL)",
+    "intervalo_concentracao_infusao": "1.4 - 16.5 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Bleomicina",
+    "classe": "Antibiótico Antitumoral",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 15 UI",
+    "intervalo_concentracao_infusao": "3.0 - 15.0 UI/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Blinatumomabe",
+    "classe": "BiTE (CD19 x CD3)",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 38.5 mcg",
+    "intervalo_concentracao_infusao": "Faixa de ng/mL (Requer estabilizador)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Bortezomibe",
+    "classe": "Inibidor de Proteassoma",
+    "marcas": ["Velcade", "Genéricos"],
+    "apresentacao_frasco": "Pó liofilizado 3.5 mg",
+    "intervalo_concentracao_infusao": "IV: 1.0 mg/mL | SC: 2.5 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Brentuximabe vedotina",
+    "classe": "ADC (Anti-CD30)",
+    "marcas": ["Adcetris"],
+    "apresentacao_frasco": "Pó liofilizado 50 mg",
+    "intervalo_concentracao_infusao": "0.4 - 1.8 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Bussulfano",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Frasco 60 mg/10 mL (Solução 6 mg/mL)",
+    "intervalo_concentracao_infusao": "~0.5 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Cabazitaxel",
+    "classe": "Taxano",
+    "marcas": ["Jevtana"],
+    "apresentacao_frasco": "Concentrado + Diluente (10 mg/mL)",
+    "intervalo_concentracao_infusao": "0.10 - 0.26 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Carboplatina",
+    "classe": "Platina",
+    "marcas": ["Paraplatin", "Genéricos"],
+    "apresentacao_frasco": "Solução 10 mg/mL",
+    "intervalo_concentracao_infusao": "0.5 - 2.0 mg/mL",
+    "diluente_padrao": "Glicose 5% ou NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Carfilzomib",
+    "classe": "Inibidor de Proteassoma",
+    "marcas": ["Kyprolis"],
+    "apresentacao_frasco": "Pó liofilizado 10, 30, 60 mg",
+    "intervalo_concentracao_infusao": "2.0 mg/mL",
+    "diluente_padrao": "Glicose 5%"
+  },
+  {
+    "principio_ativo": "Carmustina",
+    "classe": "Nitrosoureia",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 100 mg",
+    "intervalo_concentracao_infusao": "~0.2 mg/mL",
+    "diluente_padrao": "Glicose 5%"
+  },
+  {
+    "principio_ativo": "Cemiplimabe",
+    "classe": "Anti-PD-1",
+    "marcas": ["Libtayo"],
+    "apresentacao_frasco": "Frasco 350 mg/7 mL (Solução 50 mg/mL)",
+    "intervalo_concentracao_infusao": "1.0 - 20.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Cetuximabe",
+    "classe": "Anti-EGFR",
+    "marcas": ["Erbitux"],
+    "apresentacao_frasco": "Frascos de 100 mg/20 mL e 500 mg/100 mL (Solução 5 mg/mL)",
+    "intervalo_concentracao_infusao": "5.0 mg/mL (Puro) ou diluído",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Ciclofosfamida",
+    "classe": "Alquilante",
+    "marcas": ["Genuxal", "Genéricos"],
+    "apresentacao_frasco": "Pó liofilizado",
+    "intervalo_concentracao_infusao": "2.0 - 20.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Cidofovir",
+    "classe": "Antiviral",
+    "marcas": ["Vistide (Importado)"],
+    "apresentacao_frasco": "Frasco 375 mg/5 mL (Solução 75 mg/mL)",
+    "intervalo_concentracao_infusao": "~3.0 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Cisplatina",
+    "classe": "Platina",
+    "marcas": ["Platistine", "Genéricos"],
+    "apresentacao_frasco": "Solução 1 mg/mL",
+    "intervalo_concentracao_infusao": "0.5 - 1.0 mg/mL (Requer Cloreto)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Citarabina",
+    "classe": "Antimetabólito",
+    "marcas": ["Aracytin", "Genéricos"],
+    "apresentacao_frasco": "Solução 20 mg/mL ou 100 mg/mL",
+    "intervalo_concentracao_infusao": "0.1 - 100.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Cladribina",
+    "classe": "Análogo da Purina",
+    "marcas": ["Leustatin"],
+    "apresentacao_frasco": "Frasco 10 mg/10 mL (Solução 1 mg/mL)",
+    "intervalo_concentracao_infusao": "0.015 - 0.1 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Dacarbazina",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado",
+    "intervalo_concentracao_infusao": "1.5 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Dactinomicina",
+    "classe": "Antibiótico Antitumoral",
+    "marcas": ["Cosmegen"],
+    "apresentacao_frasco": "Pó liofilizado 500 mcg",
+    "intervalo_concentracao_infusao": "Injeção direta",
+    "diluente_padrao": "Água para injetáveis (Reconst.)"
+  },
+  {
+    "principio_ativo": "Daratumumab",
+    "classe": "Anti-CD38",
+    "marcas": [],
+    "apresentacao_frasco": "IV: 20 mg/mL | SC: 120 mg/mL",
+    "intervalo_concentracao_infusao": "IV: 0.4 - 3.6 mg/mL | SC: Não diluir",
+    "diluente_padrao": "IV: NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Daunorrubicina",
+    "classe": "Antraciclina",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 20 mg",
+    "intervalo_concentracao_infusao": "2.0 mg/mL (Bolus) ou diluído",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Decitabina",
+    "classe": "Hipometilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 50 mg",
+    "intervalo_concentracao_infusao": "0.1 - 1.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Docetaxel",
+    "classe": "Taxano",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 20 mg/mL ou 80 mg/4 mL",
+    "intervalo_concentracao_infusao": "0.3 - 0.74 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Dostarlimabe",
+    "classe": "Anti-PD-1",
+    "marcas": ["Jemperli"],
+    "apresentacao_frasco": "Frasco 500 mg/10 mL (Solução 50 mg/mL)",
+    "intervalo_concentracao_infusao": "2.0 - 10.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Doxorrubicina",
+    "classe": "Antraciclina",
+    "marcas": ["Adriblastina", "Fauldoxo"],
+    "apresentacao_frasco": "Pó ou Solução 2 mg/mL",
+    "intervalo_concentracao_infusao": "Variável (Bolus ou infusão curta)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Doxorrubicina Lipossomal",
+    "classe": "Antraciclina Lipossomal",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 2 mg/mL",
+    "intervalo_concentracao_infusao": "0.4 - 1.2 mg/mL",
+    "diluente_padrao": "Glicose 5% (Obrigatório)"
+  },
+  {
+    "principio_ativo": "Durvalumabe",
+    "classe": "Anti-PD-L1",
+    "marcas": ["Imfinzi"],
+    "apresentacao_frasco": "Frascos 120 mg/2,4 mL e 500 mg/10 mL (Solução 50 mg/mL)",
+    "intervalo_concentracao_infusao": "1.0 - 15.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Elotuzumabe",
+    "classe": "Anti-SLAMF7",
+    "marcas": ["Empliciti"],
+    "apresentacao_frasco": "Pó liofilizado 300 mg, 400 mg",
+    "intervalo_concentracao_infusao": "1.0 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Elranatamabe",
+    "classe": "Bispecífico (BCMA x CD3)",
+    "marcas": ["Elrexfio"],
+    "apresentacao_frasco": "Frascos 44mg/1,1mL e 76mg/1,9mL (Solução 40 mg/mL)",
+    "intervalo_concentracao_infusao": "Uso SC direto",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Enfortumabe vedotina",
+    "classe": "ADC (Anti-Nectin-4)",
+    "marcas": ["Padcev"],
+    "apresentacao_frasco": "Pó liofilizado 20 mg, 30 mg",
+    "intervalo_concentracao_infusao": "0.3 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Epcoritamabe",
+    "classe": "Bispecífico (CD20 x CD3)",
+    "marcas": ["Epkinly"],
+    "apresentacao_frasco": "Frascos 4 mg/0,8 mL e 48 mg/0,8 mL",
+    "intervalo_concentracao_infusao": "Uso SC direto",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Epirrubicina",
+    "classe": "Antraciclina",
+    "marcas": ["Farmorubicina"],
+    "apresentacao_frasco": "Pó ou Solução 2 mg/mL",
+    "intervalo_concentracao_infusao": "2.0 mg/mL (Bolus) ou diluído",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Eribulina",
+    "classe": "Inibidor de Microtúbulos",
+    "marcas": ["Halaven"],
+    "apresentacao_frasco": "Frasco 0,88 mg/2 mL (Solução 0.44 mg/mL)",
+    "intervalo_concentracao_infusao": "0.02 - 0.44 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Etoposídeo",
+    "classe": "Inibidor de Topoisomerase II",
+    "marcas": ["Vepesid", "Etopul"],
+    "apresentacao_frasco": "Solução 20 mg/mL",
+    "intervalo_concentracao_infusao": "Max 0.4 mg/mL (Risco de precipitação)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Fludarabina",
+    "classe": "Análogo da Purina",
+    "marcas": ["Fludara"],
+    "apresentacao_frasco": "Pó 50 mg",
+    "intervalo_concentracao_infusao": "0.04 - 1.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Fluorouracil (5-FU)",
+    "classe": "Antimetabólito",
+    "marcas": ["Genéricos"],
+    "apresentacao_frasco": "Solução 25 mg/mL",
+    "intervalo_concentracao_infusao": "25 mg/mL ou diluído",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Foscarnet",
+    "classe": "Antiviral",
+    "marcas": ["Foscavir"],
+    "apresentacao_frasco": "Solução 24 mg/mL",
+    "intervalo_concentracao_infusao": "12.0 - 24.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Fotemustine",
+    "classe": "Nitrosoureia",
+    "marcas": ["Muphoran"],
+    "apresentacao_frasco": "Pó 208 mg",
+    "intervalo_concentracao_infusao": "Diluição em Glicose 5%",
+    "diluente_padrao": "Glicose 5%"
+  },
+  {
+    "principio_ativo": "Ganciclovir",
+    "classe": "Antiviral",
+    "marcas": ["Cymevene"],
+    "apresentacao_frasco": "Pó 500 mg",
+    "intervalo_concentracao_infusao": "Max 10.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Gencitabina",
+    "classe": "Antimetabólito",
+    "marcas": ["Gemzar", "Genéricos"],
+    "apresentacao_frasco": "Pó 200 mg, 1 g, 2 g",
+    "intervalo_concentracao_infusao": "0.1 - 38.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Gentuzumabe ozogamicina",
+    "classe": "ADC (Anti-CD33)",
+    "marcas": ["Mylotarg"],
+    "apresentacao_frasco": "Pó 4.5 mg",
+    "intervalo_concentracao_infusao": "0.075 - 0.234 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Idarrubicina",
+    "classe": "Antraciclina",
+    "marcas": ["Zavedos"],
+    "apresentacao_frasco": "Pó liofilizado 5 mg, 10 mg",
+    "intervalo_concentracao_infusao": "1.0 mg/mL (Bolus)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Ifosfamida",
+    "classe": "Alquilante",
+    "marcas": ["Holoxane"],
+    "apresentacao_frasco": "Pó 1 g, 2 g",
+    "intervalo_concentracao_infusao": "0.6 - 20.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Inotuzumabe ozogamicina",
+    "classe": "ADC (Anti-CD22)",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 1 mg",
+    "intervalo_concentracao_infusao": "0.01 - 0.1 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Interleucina (Aldesleukin)",
+    "classe": "Citocina",
+    "marcas": ["Proleukin"],
+    "apresentacao_frasco": "Pó 18/22 Milhões UI",
+    "intervalo_concentracao_infusao": "Depende da faixa",
+    "diluente_padrao": "Glicose 5%"
+  },
+  {
+    "principio_ativo": "Ipilimumabe",
+    "classe": "Anti-CTLA-4",
+    "marcas": [],
+    "apresentacao_frasco": "Frasco 50 mg/10 mL e 200 mg/40 mL",
+    "intervalo_concentracao_infusao": "1.0 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Irinotecano",
+    "classe": "Inibidor de Topoisomerase I",
+    "marcas": ["Camptosar", "Genéricos"],
+    "apresentacao_frasco": "Solução 20 mg/mL",
+    "intervalo_concentracao_infusao": "0.12 - 2.8 mg/mL",
+    "diluente_padrao": "Glicose 5% ou NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Isatuximabe",
+    "classe": "Anti-CD38",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 20 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em bolsa 250 mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Lurbinectedin",
+    "classe": "Inibidor de Transcrição",
+    "marcas": ["Zepzelca"],
+    "apresentacao_frasco": "Pó liofilizado 4 mg",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL ou 500 mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Melfalano",
+    "classe": "Alquilante",
+    "marcas": ["Alkeran"],
+    "apresentacao_frasco": "Pó 50 mg + Diluente",
+    "intervalo_concentracao_infusao": "Max 0.45 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Metotrexato",
+    "classe": "Antimetabólito",
+    "marcas": ["Mathera", "Genéricos"],
+    "apresentacao_frasco": "Solução 25 mg/mL ou 100 mg/mL",
+    "intervalo_concentracao_infusao": "Variável",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Mitomicina",
+    "classe": "Antibiótico/Alquilante",
+    "marcas": ["Mitocin"],
+    "apresentacao_frasco": "Pó 5 mg, 20 mg",
+    "intervalo_concentracao_infusao": "0.5 - 1.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Mitoxantrona",
+    "classe": "Antracenodiona",
+    "marcas": ["Evomixan"],
+    "apresentacao_frasco": "Solução 2 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em 50mL a 100mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Nab-paclitaxel",
+    "classe": "Taxano (Nanopartícula)",
+    "marcas": ["Abraxane"],
+    "apresentacao_frasco": "Pó 100 mg",
+    "intervalo_concentracao_infusao": "5.0 mg/mL (Não diluir a suspensão)",
+    "diluente_padrao": "NaCl 0,9% (apenas reconstituição)"
+  },
+  {
+    "principio_ativo": "Naxitamabe",
+    "classe": "Anti-GD2",
+    "marcas": [],
+    "apresentacao_frasco": "Frasco 40 mg/10 mL",
+    "intervalo_concentracao_infusao": "Diluição em NaCl 0,9%",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Nivolumabe",
+    "classe": "Anti-PD-1",
+    "marcas": ["Opdivo"],
+    "apresentacao_frasco": "Solução 10 mg/mL",
+    "intervalo_concentracao_infusao": "1.0 - 10.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Nivolumabe + Relatlimabe",
+    "classe": "Anti-PD-1 + Anti-LAG-3",
+    "marcas": ["Opdualag"],
+    "apresentacao_frasco": "Frasco 20 mL",
+    "intervalo_concentracao_infusao": "Diluição conforme dose fixa",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Obinutuzumabe",
+    "classe": "Anti-CD20 (Tipo II)",
+    "marcas": ["Gazyva"],
+    "apresentacao_frasco": "Frasco 1000 mg/40 mL",
+    "intervalo_concentracao_infusao": "0.4 - 4.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Oxaliplatina",
+    "classe": "Platina",
+    "marcas": ["Eloxatin", "Genéricos"],
+    "apresentacao_frasco": "Solução 5 mg/mL ou Pó 50/100 mg",
+    "intervalo_concentracao_infusao": "0.2 - 2.0 mg/mL",
+    "diluente_padrao": "Glicose 5% (Proibido NaCl)"
+  },
+  {
+    "principio_ativo": "Paclitaxel",
+    "classe": "Taxano",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 6 mg/mL",
+    "intervalo_concentracao_infusao": "0.3 - 1.2 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Panitumumabe",
+    "classe": "Anti-EGFR",
+    "marcas": ["Vectibix"],
+    "apresentacao_frasco": "Solução 20 mg/mL",
+    "intervalo_concentracao_infusao": "Max 10.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Pegaspargase",
+    "classe": "Enzima",
+    "marcas": ["Oncaspar"],
+    "apresentacao_frasco": "Solução 750 UI/mL",
+    "intervalo_concentracao_infusao": "Diluição em 100 mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Pembrolizumabe",
+    "classe": "Anti-PD-1",
+    "marcas": ["Keytruda"],
+    "apresentacao_frasco": "Frasco 100 mg/4 mL",
+    "intervalo_concentracao_infusao": "1.0 - 10.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Pemetrexede",
+    "classe": "Antimetabólito",
+    "marcas": ["Alimta", "Genéricos"],
+    "apresentacao_frasco": "Pó liofilizado 100/500 mg",
+    "intervalo_concentracao_infusao": "Diluição em 100 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Pertuzumabe",
+    "classe": "Anti-HER2",
+    "marcas": ["Perjeta"],
+    "apresentacao_frasco": "Frasco 420 mg/14 mL",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Pertuzumabe + Trastuzumabe",
+    "classe": "Anti-HER2 Duplo",
+    "marcas": ["Phesgo"],
+    "apresentacao_frasco": "Frascos 10 mL ou 15 mL",
+    "intervalo_concentracao_infusao": "Uso SC direto (Sem diluição)",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Polatuzumabe vedotina",
+    "classe": "ADC (Anti-CD79b)",
+    "marcas": ["Polivy"],
+    "apresentacao_frasco": "Pó liofilizado 30 mg, 140 mg",
+    "intervalo_concentracao_infusao": "0.72 - 22.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou 0,45%"
+  },
+  {
+    "principio_ativo": "Ramucirumabe",
+    "classe": "Anti-VEGFR2",
+    "marcas": ["Cyramza"],
+    "apresentacao_frasco": "Solução 10 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Rituximabe",
+    "classe": "Anti-CD20",
+    "marcas": [],
+    "apresentacao_frasco": "IV: 10 mg/mL | SC: 120 mg/mL",
+    "intervalo_concentracao_infusao": "IV: 1.0 - 4.0 mg/mL | SC: Não diluir",
+    "diluente_padrao": "IV: NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Sacituzumabe govitecano",
+    "classe": "ADC (Anti-Trop-2)",
+    "marcas": [],
+    "apresentacao_frasco": "Pó liofilizado 180 mg",
+    "intervalo_concentracao_infusao": "1.1 - 3.4 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Tafasitamabe",
+    "classe": "Anti-CD19",
+    "marcas": ["Monjuvi"],
+    "apresentacao_frasco": "Pó 200 mg",
+    "intervalo_concentracao_infusao": "2.0 - 8.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Talquetamabe",
+    "classe": "Bispecífico (GPRC5D x CD3)",
+    "marcas": [],
+    "apresentacao_frasco": "SC: 2 mg/mL e 40 mg/mL",
+    "intervalo_concentracao_infusao": "Uso SC direto",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Tarlatamabe",
+    "classe": "BiTE (DLL3 x CD3)",
+    "marcas": ["Imdelltra"],
+    "apresentacao_frasco": "Pó liofilizado 1 mg, 10 mg",
+    "intervalo_concentracao_infusao": "Diluição conforme protocolo",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Tebentafusp",
+    "classe": "Bispecífico (gp100 x CD3)",
+    "marcas": ["Kimmtrak"],
+    "apresentacao_frasco": "Frasco 100 mcg/0,5 mL",
+    "intervalo_concentracao_infusao": "Diluição em 100 mL com albumina",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Teclistamabe",
+    "classe": "Bispecífico (BCMA x CD3)",
+    "marcas": [],
+    "apresentacao_frasco": "SC: 10 mg/mL e 90 mg/mL",
+    "intervalo_concentracao_infusao": "Uso SC direto",
+    "diluente_padrao": "N/A"
+  },
+  {
+    "principio_ativo": "Temozolomida",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó 100 mg",
+    "intervalo_concentracao_infusao": "Administrar reconstituído",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Tensirolimo",
+    "classe": "Inibidor de mTOR",
+    "marcas": [],
+    "apresentacao_frasco": "Concentrado 25 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em bolsa 250 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Tiotepa",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó 15 mg, 100 mg",
+    "intervalo_concentracao_infusao": "Variável",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Topotecano",
+    "classe": "Inibidor Topoisomerase I",
+    "marcas": ["Hycamtin"],
+    "apresentacao_frasco": "Pó 4 mg",
+    "intervalo_concentracao_infusao": "0.02 - 0.5 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Trabectedina",
+    "classe": "Alquilante",
+    "marcas": [],
+    "apresentacao_frasco": "Pó 1 mg",
+    "intervalo_concentracao_infusao": "Diluição em 500 mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Trastuzumabe",
+    "classe": "Anti-HER2",
+    "marcas": [],
+    "apresentacao_frasco": "Pó 150 mg, 440 mg",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Trastuzumabe deruxtecan",
+    "classe": "ADC (Anti-HER2)",
+    "marcas": ["Enhertu"],
+    "apresentacao_frasco": "Pó 100 mg",
+    "intervalo_concentracao_infusao": "0.4 - 2.0 mg/mL",
+    "diluente_padrao": "Glicose 5%"
+  },
+  {
+    "principio_ativo": "Trastuzumabe entansina",
+    "classe": "ADC (Anti-HER2)",
+    "marcas": ["Kadcyla"],
+    "apresentacao_frasco": "Pó 100 mg, 160 mg",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL",
+    "diluente_padrao": "NaCl 0,9% (Não usar Glicose)"
+  },
+  {
+    "principio_ativo": "Tremelimumabe",
+    "classe": "Anti-CTLA-4",
+    "marcas": ["Imjudo"],
+    "apresentacao_frasco": "Solução 20 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em bolsa",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Trióxido de arsênio",
+    "classe": "Indutor de Apoptose",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 1 mg/mL",
+    "intervalo_concentracao_infusao": "Diluição em 100-250 mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Vedolizumabe",
+    "classe": "Anti-integrina",
+    "marcas": ["Entyvio"],
+    "apresentacao_frasco": "Pó 300 mg",
+    "intervalo_concentracao_infusao": "Diluição em 250 mL",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Vimblastina",
+    "classe": "Alcaloide da Vinca",
+    "marcas": ["Fauldblastina"],
+    "apresentacao_frasco": "Solução 1 mg/mL",
+    "intervalo_concentracao_infusao": "Vesicante (Bolus direto)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Vincristina",
+    "classe": "Alcaloide da Vinca",
+    "marcas": [],
+    "apresentacao_frasco": "Solução 1 mg/mL",
+    "intervalo_concentracao_infusao": "Vesicante (Bolus direto ou minibolsa)",
+    "diluente_padrao": "NaCl 0,9%"
+  },
+  {
+    "principio_ativo": "Vinflunina",
+    "classe": "Alcaloide da Vinca",
+    "marcas": ["Javlor"],
+    "apresentacao_frasco": "Solução 25 mg/mL",
+    "intervalo_concentracao_infusao": "3.0 - 12.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Vinorelbina",
+    "classe": "Alcaloide da Vinca",
+    "marcas": ["Navelbine", "Genéricos"],
+    "apresentacao_frasco": "Solução 10 mg/mL",
+    "intervalo_concentracao_infusao": "1.5 - 3.0 mg/mL",
+    "diluente_padrao": "NaCl 0,9% ou Glicose 5%"
+  },
+  {
+    "principio_ativo": "Zolbetuximabe",
+    "classe": "Anti-Claudina 18.2",
+    "marcas": ["Vyloy"],
+    "apresentacao_frasco": "Pó liofilizado 100 mg",
+    "intervalo_concentracao_infusao": "Diluição em bolsa IV",
+    "diluente_padrao": "NaCl 0,9%"
+  }
+]

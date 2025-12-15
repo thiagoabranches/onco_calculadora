@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - OncoCalc Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Função para Upload e Preenchimento Automático
+        async function uploadBula() {
+            const fileInput = document.getElementById('bula-file');
+            const mode = document.querySelector('input[name="extract-mode"]:checked').value;
+            const loading = document.getElementById('loading-extraction');
+            const status = document.getElementById('extraction-status');
+
+            if (!fileInput.files[0]) {
+                alert("Selecione um arquivo PDF primeiro.");
+                return;
+            }
+
+            loading.classList.remove('hidden');
+            status.innerHTML = '';
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            formData.append('mode', mode);
+
+            try {
+                const response = await fetch('/api/extract-bula', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    status.innerHTML = `<span class="text-red-600">Erro: ${data.error}</span>`;
+                } else {
+                    // Preencher campos automaticamente
+                    if(data.name) document.querySelector('[name="name"]').value = data.name;
+                    if(data.class) document.querySelector('[name="class"]').value = data.class;
+                    if(data.concentration) document.querySelector('[name="concentration"]').value = data.concentration;
+                    if(data.storageCondition) document.querySelector('[name="storageCondition"]').value = data.storageCondition;
+                    if(data.diluents) document.querySelector('[name="diluents"]').value = data.diluents;
+                    if(data.stabilityDiluted) document.querySelector('[name="stabilityDiluted"]').value = data.stabilityDiluted;
+                    if(data.observations) document.querySelector('[name="observations"]').value = data.observations;
+                    
+                    // Selects
+                    if(data.category) setSelectValue('category', data.category);
+                    if(data.tissueDamage) setSelectValue('tissueDamage', data.tissueDamage);
+                    if(data.sf09) setSelectValue('sf09', data.sf09);
+                    if(data.sg5) setSelectValue('sg5', data.sg5);
+
+                    status.innerHTML = `<span class="text-green-600 font-bold">Dados extraídos com sucesso via modo ${mode.toUpperCase()}! Verifique os campos abaixo.</span>`;
+                }
+            } catch (err) {
+                status.innerHTML = `<span class="text-red-600">Erro na requisição.</span>`;
+                console.error(err);
+            } finally {
+                loading.classList.add('hidden');
+            }
+        }
+
+        function setSelectValue(name, value) {
+            const select = document.querySelector(`select[name="${name}"]`);
+            if (!select) return;
+            // Tenta encontrar a opção correspondente (case insensitive)
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].text.toLowerCase().includes(value.toLowerCase()) || 
+                    select.options[i].value.toLowerCase() === value.toLowerCase()) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6 max-w-4xl">
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">Novo Medicamento</h1>
+                <div class="space-x-4">
+                    <a href="/" class="text-indigo-600 hover:text-indigo-800 font-medium">← Tabela</a>
+                    <a href="/logout" class="text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-1 rounded">Sair</a>
+                </div>
+            </div>
+
+            <div class="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+                <h3 class="text-lg font-bold text-blue-800 mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Importar dados da Bula (PDF)
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+                    <div>
+                        <label class="block text-sm font-medium text-blue-700 mb-1">Arquivo PDF</label>
+                        <input type="file" id="bula-file" accept=".pdf" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-100 file:text-blue-700 hover:file:bg-blue-200">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-blue-700 mb-1">Método de Extração</label>
+                        <div class="flex gap-4">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="extract-mode" value="local" checked class="text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Local (Regex)</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="extract-mode" value="cloud" class="text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Cloud (IA/GPT)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex items-center gap-4">
+                    <button type="button" onclick="uploadBula()" class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition">
+                        Extrair Dados Automaticamente ⚡
+                    </button>
+                    <div id="loading-extraction" class="hidden flex items-center text-blue-600 text-sm">
+                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                        Lendo PDF...
+                    </div>
+                </div>
+                <div id="extraction-status" class="mt-2 text-sm"></div>
+            </div>
+
+            <hr class="border-gray-300 mb-6">
+
+            <form method="post" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Nome do Medicamento</label>
+                        <input type="text" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Categoria</label>
+                        <select name="category" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-white">
+                            <option>Quimioterápicos Clássicos</option>
+                            <option>Anticorpos Monoclonais</option>
+                            <option>Agente Citoprotetor</option>
+                            <option>Agente de Suporte</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Classe Farmacológica</label>
+                        <input type="text" name="class" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Apresentação / Concentração</label>
+                        <input type="text" name="concentration" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <h3 class="text-lg font-medium text-gray-900">Parâmetros de Cálculo</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Conc. Padrão (mg/mL)</label>
+                        <input type="number" step="0.001" name="concentracaoPadrao" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Conc. Mínima Segura</label>
+                        <input type="number" step="0.001" name="concMin" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Conc. Máxima Segura</label>
+                        <input type="number" step="0.001" name="concMax" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <h3 class="text-lg font-medium text-gray-900">Estabilidade e Diluição</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Compatível com SG 5%?</label>
+                        <select name="sg5" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm bg-white p-2">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Compatível com SF 0,9%?</label>
+                        <select name="sf09" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm bg-white p-2">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Potencial Citotóxico</label>
+                        <select name="cytotoxic" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm bg-white p-2">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Dano Tecidual</label>
+                        <select name="tissueDamage" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm bg-white p-2">
+                            <option value="Vesicante">Vesicante</option>
+                            <option value="Irritante">Irritante</option>
+                            <option value="Neutro">Neutro</option>
+                            <option value="Não irritante">Não irritante</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700">Estabilidade Padrão (Diluído)</label>
+                        <input type="text" name="stabilityDiluted" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 pt-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Diluentes (Texto livre)</label>
+                        <input type="text" name="diluents" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Condições de Armazenamento</label>
+                        <input type="text" name="storageCondition" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Observações (IA)</label>
+                        <textarea name="observations" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></textarea>
+                    </div>
+                </div>
+
+                <div class="pt-6 flex justify-end">
+                    <button type="submit" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-150 ease-in-out shadow-lg">
+                        Salvar Medicamento
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

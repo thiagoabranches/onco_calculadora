@@ -1,0 +1,2 @@
+Estado V7 Completo: Módulos 1 a 7 implementados.
+Inclui: Marcas, Faixas, Obs, Parametros, Fisico-Quimico (NIOSH), Estabilidade, Clinica.

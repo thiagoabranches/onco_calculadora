@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_code = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -34,25 +36,31 @@
         .brand-multi { background: #eff6ff; color: #2563eb; border: 1px solid #dbeafe; cursor: context-menu; padding: 4px 8px; border-radius: 6px; font-weight: 600; font-size: 0.75rem; }
         .via-badge { background: #f3e8ff; color: #7e22ce; padding: 2px 8px; border-radius: 12px; font-weight: 700; font-size: 0.7rem; border: 1px solid #e9d5ff; }
         
-        /* PADRONIZAÇÃO */
-        .std-badge { display: inline-flex; align-items: center; justify-content: center; padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; min-width: 100px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        /* PADRONIZAÇÃO (NOVOS ESTILOS COM ESPAÇAMENTO PARA EMOJI) */
+        .std-badge { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            padding: 6px 12px; border-radius: 6px; 
+            font-weight: 700; font-size: 0.8rem; min-width: 100px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+        }
         .std-emoji { margin-right: 6px; font-size: 1em; line-height: 1; }
         .std-sf { background-color: #fef08a; color: #000000; border: 1px solid #fde047; } /* Amarelo/Preto */
         .std-sg { background-color: #2563eb; color: #ffffff; border: 1px solid #1d4ed8; } /* Azul/Branco */
         .std-other { background-color: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
 
         /* MODAIS */
+        .tooltip-box { position: absolute; background: white; border: 1px solid #e2e8f0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); padding: 12px; border-radius: 8px; z-index: 50; width: 320px; font-size: 0.85rem; color: #334155; line-height: 1.5; display: none; }
+        .tooltip-header { font-weight: 700; color: #0f172a; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px; margin-bottom: 8px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;}
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.4); z-index: 60; display: none; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
         .modal-content { background: white; border-radius: 16px; width: 95%; max-width: 800px; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); overflow: hidden; animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
         @keyframes slideUp { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
         .modal-header { background: white; padding: 20px 24px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; }
         .modal-body { padding: 24px; overflow-y: auto; background: #fafafa; }
-        
-        /* Modais de Informação (Física/Clínica) */
         .data-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
         .data-table td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
         .data-table tr:last-child td { border-bottom: none; }
         .data-table td:first-child { font-weight: 600; color: #64748b; width: 35%; background: #f8fafc; border-right: 1px solid #f1f5f9; }
+        
         .clin-card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
         .clin-title { font-weight: 700; color: #334155; font-size: 0.9rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
         .clin-text { font-size: 0.9rem; color: #475569; line-height: 1.6; }
@@ -60,25 +68,19 @@
         .alert-box .clin-title { color: #b91c1c; }
         .alert-box .clin-text { color: #7f1d1d; }
 
-        /* Protocolos */
-        #protocol-list div { padding: 12px; border-bottom: 1px solid #e2e8f0; cursor: pointer; transition: background 0.1s; }
-        #protocol-list div:hover { background-color: #f1f5f9; }
-        .protocol-title { font-weight: 700; color: #334155; }
-        .protocol-acronym { background-color: #eef2ff; color: #4338ca; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.75rem; }
-        .infusion-step { background: #ecfdf5; border: 1px solid #d1fae5; padding: 10px; border-radius: 8px; margin-bottom: 8px; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; }
-        .step-number { background: #059669; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; justify-content: center; align-items: center; font-weight: 700; font-size: 0.8rem; flex-shrink: 0; }
-        .step-med { font-weight: 600; color: #047857; }
-        
-        /* Tooltips/Context Menu */
-        .tooltip-box { position: absolute; background: white; border: 1px solid #e2e8f0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); padding: 12px; border-radius: 8px; z-index: 50; width: 320px; font-size: 0.85rem; color: #334155; line-height: 1.5; display: none; }
-        .tooltip-header { font-weight: 700; color: #0f172a; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px; margin-bottom: 8px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;}
+        #context-menu { position: absolute; z-index: 70; display: none; background: white; border: 1px solid #e2e8f0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-radius: 8px; min-width: 260px; overflow: hidden; }
+        .ctx-header { background: #f8fafc; padding: 10px 14px; font-weight: 700; color: #64748b; font-size: 0.7rem; text-transform: uppercase; border-bottom: 1px solid #e2e8f0; letter-spacing: 0.05em; }
+        .ctx-item { padding: 10px 14px; font-size: 0.85rem; border-bottom: 1px solid #f8fafc; color: #334155; cursor: default; }
+        .ctx-label { display: block; font-size: 0.7rem; color: #94a3b8; margin-bottom: 2px; font-weight: 600; }
 
         /* CALCULADORA */
         .calc-input { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 2px; font-size: 0.9rem; }
+        .calc-input:focus { border-color: #3b82f6; outline: none; ring: 2px solid #bfdbfe; }
         .calc-label { display: block; font-size: 0.75rem; font-weight: 700; color: #64748b; margin-bottom: 2px; margin-top: 8px;}
         .calc-result { background: #f0fdf4; border: 1px solid #bbf7d0; padding: 16px; border-radius: 8px; text-align: center; margin-top: 16px; animation: slideUp 0.2s ease-out; }
         .calc-res-val { font-size: 1.5rem; font-weight: 800; color: #15803d; }
         .tab-btn { padding: 10px 20px; font-size: 0.85rem; font-weight: 600; color: #64748b; border-bottom: 2px solid transparent; cursor: pointer; transition: all 0.2s; }
+        .tab-btn:hover { color: #334155; }
         .tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; background: #f8fafc; }
         .tab-content { display: none; padding: 20px 0; }
         .tab-content.active { display: block; }
@@ -98,9 +100,6 @@
         </div>
         
         <div class="flex gap-4 items-center">
-            <button onclick="Protocol.open()" class="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 font-semibold text-sm transition border border-green-100">
-                <span>🩺</span> Protocolos
-            </button>
             <button onclick="Calc.open()" class="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 font-semibold text-sm transition border border-indigo-100">
                 <span>🧮</span> Calculadoras
             </button>
@@ -158,59 +157,24 @@
     <div id="info-modal" class="modal-overlay" onclick="App.closeModal(event, 'info-modal')"><div class="modal-content"><div class="modal-header"><h3 class="text-lg font-bold text-slate-800" id="modal-title">Detalhes</h3><button onclick="document.getElementById('info-modal').style.display='none'" class="text-slate-400 hover:text-red-500 text-2xl">&times;</button></div><div class="modal-body"><table class="data-table"><tbody id="modal-table-body"></tbody></table></div></div></div>
     <div id="clin-modal" class="modal-overlay" onclick="App.closeModal(event, 'clin-modal')"><div class="modal-content"><div class="modal-header"><h3 class="text-lg font-bold text-slate-800" id="clin-modal-title">Info</h3><button onclick="document.getElementById('clin-modal').style.display='none'" class="text-slate-400 hover:text-red-500 text-2xl">&times;</button></div><div class="modal-body" id="clin-modal-body"></div></div></div>
     
-    <div id="protocol-modal" class="modal-overlay" onclick="App.closeModal(event, 'protocol-modal')">
-        <div class="modal-content" style="max-width: 900px; display: flex; flex-direction: row; padding: 0;">
-            
-            <div class="w-1/3 bg-white border-r border-slate-200 flex flex-col flex-shrink-0">
-                <div class="p-4 border-b border-slate-200">
-                    <h3 class="text-lg font-bold text-slate-800">Protocolos de Infusão</h3>
-                    <input type="text" id="protocol-search" oninput="Protocol.filter()" class="w-full mt-2 p-2 border border-slate-300 rounded-lg text-sm" placeholder="Buscar protocolo ou acrônimo...">
-                </div>
-                <div class="overflow-y-auto flex-1" id="protocol-list">
-                    <div class="text-center text-slate-400 p-4">Carregando...</div>
-                </div>
-            </div>
-            
-            <div class="w-2/3 bg-gray-50 flex flex-col">
-                <div class="modal-header bg-white">
-                    <h3 class="text-lg font-bold text-slate-800" id="protocol-detail-title">Selecione um Protocolo (131+ disponíveis)</h3>
-                    <button onclick="document.getElementById('protocol-modal').style.display='none'" class="text-slate-400 hover:text-red-500 text-2xl">&times;</button>
-                </div>
-                <div class="modal-body flex-1">
-                    <div id="protocol-detail-content">
-                        <p class="text-slate-500 text-sm">Use a barra de busca ou selecione um protocolo na lista ao lado para ver a ordem sequencial de infusão.</p>
-                        <p class="mt-4 text-xs text-slate-400 italic">Fonte dos dados de ordem de infusão: Ordem de Infusão de Medicamentos Antineoplásicos - 2ª Edição.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    
     <div id="calc-modal" class="modal-overlay" onclick="Calc.close(event)">
         <div class="modal-content" style="max-width: 550px;">
             <div class="modal-header bg-indigo-50"><div class="flex items-center gap-2"><span class="text-2xl">🧮</span><h3 class="text-lg font-bold text-indigo-900">Calculadoras Clínicas</h3></div><button onclick="document.getElementById('calc-modal').style.display='none'" class="text-slate-400 hover:text-red-500 text-2xl">&times;</button></div>
             <div class="px-6 border-b border-slate-100 flex gap-4 bg-white"><div class="tab-btn active" onclick="Calc.tab('calvert', this)">Calvert</div><div class="tab-btn" onclick="Calc.tab('bsa', this)">SC (BSA)</div><div class="tab-btn" onclick="Calc.tab('crcl', this)">ClCr</div></div>
             <div class="modal-body">
-                <div id="tab-calvert" class="tab-content active"><div class="grid grid-cols-2 gap-4 mb-4"><div><label class="calc-label">Sexo</label><select id="cal-sex" class="calc-input bg-white"><option value="M">Masculino</option><option value="F">Feminino</option></select></div><div><label class="calc-label">Idade (anos)</label><input type="number" id="cal-age" class="calc-input"></div><div><label class="calc-label">Peso (kg)</label><input type="number" id="cal-weight" class="calc-input"></div><div><label class="calc-label">Altura (cm)</label><input type="number" id="cal-height" class="calc-input"></div><div><label class="calc-label">Creatinina (mg/dL)</label><input type="number" id="cal-scr" class="calc-input" step="0.01"></div><div><label class="calc-label text-indigo-600">AUC Alvo</label><input type="number" id="cal-auc" class="calc-input border-indigo-200 bg-indigo-50"></div></div><div class="flex items-center gap-3 mb-6 bg-slate-50 p-3 rounded-lg border border-slate-200"><input type="checkbox" id="cal-cap" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500"><label for="cal-cap" class="text-xs font-bold text-slate-600 cursor-pointer select-none">Cap Conservador (Max 100 mL/min)</label></div><button onclick="Calc.runCalvertAdvanced()" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-700 shadow-md">Calcular</button><div id="res-cal" class="calc-result hidden text-left text-xs bg-white border border-indigo-100 shadow-sm"><div class="text-center border-b border-slate-100 pb-3 mb-3"><span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Dose Final</span><br><span class="text-4xl font-black text-indigo-600" id="val-dose-final">000 mg</span></div><div class="grid grid-cols-2 gap-2 text-xs text-slate-500"><div class="bg-slate-50 p-2 rounded"><span class="block text-[0.65rem] uppercase font-bold text-slate-400">TFG Calc.</span><span id="val-gfr-raw" class="font-mono font-bold text-slate-700 text-lg">00</span> mL/min</div><div class="bg-slate-50 p-2 rounded"><span class="block text-[0.65rem] uppercase font-bold text-slate-400">TFG Usada</span><span id="val-gfr-used" class="font-mono font-bold text-slate-700 text-lg">00</span> mL/min</div></div><div class="mt-2 text-xs text-slate-400">Peso: <span id="val-weight-type" class="font-bold text-slate-600">Real</span></div><div id="cal-warning" class="mt-3 text-xs text-red-700 font-bold bg-red-50 p-3 rounded border border-red-100 hidden"></div></div></div>
+                <div id="tab-calvert" class="tab-content active"><div class="grid grid-cols-2 gap-4 mb-4"><div><label class="calc-label">Sexo</label><select id="cal-sex" class="calc-input bg-white"><option value="M">Masculino</option><option value="F">Feminino</option></select></div><div><label class="calc-label">Idade (anos)</label><input type="number" id="cal-age" class="calc-input"></div><div><label class="calc-label">Peso (kg)</label><input type="number" id="cal-weight" class="calc-input"></div><div><label class="calc-label">Altura (cm)</label><input type="number" id="cal-height" class="calc-input"></div><div><label class="calc-label">Creatinina (mg/dL)</label><input type="number" id="cal-scr" class="calc-input" step="0.01"></div><div><label class="calc-label text-indigo-600">AUC Alvo</label><input type="number" id="cal-auc" class="calc-input border-indigo-200 bg-indigo-50"></div></div><div class="flex items-center gap-3 mb-6 bg-slate-50 p-3 rounded-lg border border-slate-200"><input type="checkbox" id="cal-cap" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500"><label for="cal-cap" class="text-xs font-bold text-slate-600 cursor-pointer select-none">Cap Conservador (Max 100 mL/min)</label></div><button onclick="Calc.runCalvertAdvanced()" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-700 shadow-md">Calcular</button><div id="res-cal" class="calc-result hidden text-left bg-white border border-indigo-100 shadow-sm"><div class="text-center border-b border-slate-100 pb-3 mb-3"><span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Dose Final</span><br><span class="text-4xl font-black text-indigo-600" id="val-dose-final">000 mg</span></div><div class="grid grid-cols-2 gap-2 text-xs text-slate-500"><div class="bg-slate-50 p-2 rounded"><span class="block text-[0.65rem] uppercase font-bold text-slate-400">TFG Calc.</span><span id="val-gfr-raw" class="font-mono font-bold text-slate-700 text-lg">00</span> mL/min</div><div class="bg-slate-50 p-2 rounded"><span class="block text-[0.65rem] uppercase font-bold text-slate-400">TFG Usada</span><span id="val-gfr-used" class="font-mono font-bold text-slate-700 text-lg">00</span> mL/min</div></div><div class="mt-2 text-xs text-slate-400">Peso: <span id="val-weight-type" class="font-bold text-slate-600">Real</span></div><div id="cal-warning" class="mt-3 text-xs text-red-700 font-bold bg-red-50 p-3 rounded border border-red-100 hidden"></div></div></div>
                 <div id="tab-bsa" class="tab-content"><label class="calc-label">Peso (kg)</label><input type="number" id="bsa-peso" class="calc-input"><label class="calc-label">Altura (cm)</label><input type="number" id="bsa-altura" class="calc-input"><button onclick="Calc.runBSA()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold mt-4">Calcular</button><div id="res-bsa" class="calc-result hidden">SC = <span class="calc-res-val" id="val-bsa">0.00</span> m²</div></div>
-                <div id="tab-crcl" class="tab-content"><div class="grid grid-cols-2 gap-4"><div><label class="calc-label">Creatinina</label><input type="number" id="cr-creat" class="calc-input" step="0.1"></div><div><label class="calc-label">Peso</label><input type="number" id="cr-peso" class="calc-input"></div><div><div><label class="calc-label">Idade</label><input type="number" id="cr-idade" class="calc-input"></div><div><label class="calc-label">Sexo</label><select id="cr-sexo" class="calc-input"><option value="M">Masculino</option><option value="F">Feminino</option></select></div></div><button onclick="Calc.runCrCl()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold mt-4">Calcular</button><div id="res-crcl" class="calc-result hidden">ClCr = <span class="calc-res-val" id="val-crcl">00</span> mL/min</div></div>
+                <div id="tab-crcl" class="tab-content"><div class="grid grid-cols-2 gap-4"><div><label class="calc-label">Creatinina</label><input type="number" id="cr-creat" class="calc-input" step="0.1"></div><div><label class="calc-label">Peso</label><input type="number" id="cr-peso" class="calc-input"></div><div><label class="calc-label">Idade</label><input type="number" id="cr-idade" class="calc-input"></div><div><label class="calc-label">Sexo</label><select id="cr-sexo" class="calc-input"><option value="M">Masculino</option><option value="F">Feminino</option></select></div></div><button onclick="Calc.runCrCl()" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold mt-4">Calcular</button><div id="res-crcl" class="calc-result hidden">ClCr = <span class="calc-res-val" id="val-crcl">00</span> mL/min</div></div>
             </div>
         </div>
     </div>
-
 
     <script>
     // --- LÓGICA CALCULADORA (MANTIDA) ---
     const Calc = {
         open: () => document.getElementById('calc-modal').style.display = 'flex',
         close: (e) => { if(e.target.id === 'calc-modal') document.getElementById('calc-modal').style.display = 'none'; },
-        tab: (name, btn) => {
-            document.querySelectorAll('.tab-content').forEach(d => d.style.display='none');
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById('tab-'+name).style.display='block';
-            btn.classList.add('active');
-        },
+        tab: (name, btn) => { document.querySelectorAll('.tab-content').forEach(d => d.style.display='none'); document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active')); document.getElementById('tab-'+name).style.display='block'; btn.classList.add('active'); },
         runCalvertAdvanced: () => {
             const sex=document.getElementById('cal-sex').value, age=parseFloat(document.getElementById('cal-age').value), weight=parseFloat(document.getElementById('cal-weight').value), height=parseFloat(document.getElementById('cal-height').value), auc=parseFloat(document.getElementById('cal-auc').value), useCap=document.getElementById('cal-cap').checked;
             let scr=parseFloat(document.getElementById('cal-scr').value);
@@ -234,121 +198,15 @@
             else if(useCap&&gfrRaw>100) { w.innerText="Nota: TFG limitada a 100 mL/min."; w.className="mt-3 text-xs text-blue-700 font-bold bg-blue-50 p-3 rounded border border-blue-100"; w.classList.remove('hidden'); }
             document.getElementById('res-cal').classList.remove('hidden');
         },
-        runBSA: () => {
-            const p = parseFloat(document.getElementById('bsa-peso').value);
-            const a = parseFloat(document.getElementById('bsa-altura').value);
-            if(p && a) {
-                const bsa = Math.sqrt((p * a) / 3600);
-                document.getElementById('val-bsa').innerText = bsa.toFixed(2);
-                document.getElementById('res-bsa').classList.remove('hidden');
-            }
-        },
-        runCrCl: () => {
-            const cr = parseFloat(document.getElementById('cr-creat').value);
-            const p = parseFloat(document.getElementById('cr-peso').value);
-            const age = parseFloat(document.getElementById('cr-idade').value);
-            const sex = document.getElementById('cr-sexo').value;
-            if(cr && p && age) {
-                let cl = ((140 - age) * p) / (72 * cr);
-                if(sex === 'F') cl *= 0.85;
-                document.getElementById('val-crcl').innerText = cl.toFixed(1);
-                document.getElementById('res-crcl').classList.remove('hidden');
-            }
-        }
+        runBSA: () => { const p=parseFloat(document.getElementById('bsa-peso').value), a=parseFloat(document.getElementById('bsa-altura').value); if(p&&a) { document.getElementById('val-bsa').innerText=Math.sqrt((p*a)/3600).toFixed(2); document.getElementById('res-bsa').classList.remove('hidden'); } },
+        runCrCl: () => { const cr=parseFloat(document.getElementById('cr-creat').value), p=parseFloat(document.getElementById('cr-peso').value), age=parseFloat(document.getElementById('cr-idade').value), sex=document.getElementById('cr-sexo').value; if(cr&&p&&age) { let cl=((140-age)*p)/(72*cr); if(sex==='F') cl*=0.85; document.getElementById('val-crcl').innerText=cl.toFixed(1); document.getElementById('res-crcl').classList.remove('hidden'); } }
     };
-    
-    // --- LÓGICA PROTOCOLOS (MANTIDA) ---
-    const Protocol = {
-        data: [],
-        open: () => {
-            document.getElementById('protocol-modal').style.display = 'flex';
-            if (Protocol.data.length === 0) {
-                Protocol.loadData();
-            } else {
-                Protocol.renderList(Protocol.data);
-            }
-        },
-        loadData: async () => {
-            try {
-                const res = await fetch('/api/protocolos');
-                Protocol.data = await res.json();
-                Protocol.renderList(Protocol.data);
-            } catch (e) {
-                document.getElementById('protocol-list').innerHTML = '<div class="text-center text-red-500 p-4">Erro ao carregar protocolos.</div>';
-            }
-        },
-        renderList: (list) => {
-            const listDiv = document.getElementById('protocol-list');
-            listDiv.innerHTML = '';
-            
-            if (list.length === 0) {
-                listDiv.innerHTML = '<div class="text-center text-slate-400 p-4">Nenhum protocolo encontrado.</div>';
-                return;
-            }
 
-            list.sort((a,b) => a.acronym.localeCompare(b.acronym)).forEach(p => {
-                listDiv.innerHTML += `
-                    <div onclick="Protocol.showDetail(${p.id})">
-                        <span class="protocol-acronym">${p.acronym}</span>
-                        <p class="protocol-title text-sm mt-1">${p.name}</p>
-                    </div>
-                `;
-            });
-        },
-        filter: () => {
-            const query = document.getElementById('protocol-search').value.toLowerCase();
-            const filtered = Protocol.data.filter(p => 
-                p.name.toLowerCase().includes(query) || 
-                p.acronym.toLowerCase().includes(query) ||
-                p.medications.toLowerCase().includes(query)
-            );
-            Protocol.renderList(filtered);
-        },
-        showDetail: (id) => {
-            const p = Protocol.data.find(x => x.id === id);
-            if (!p) return;
-
-            document.getElementById('protocol-detail-title').innerHTML = `${p.name} <span class="protocol-acronym">${p.acronym}</span>`;
-            
-            let orderHtml = '<h4 class="font-bold text-base text-slate-700 mb-4">Ordem de Infusão Sugerida:</h4>';
-            
-            const steps = p.infusion_order.split(';');
-
-            steps.forEach(step => {
-                const parts = step.split(':');
-                if (parts.length === 2) {
-                    const number = parts[0].trim();
-                    const med = parts[1].trim();
-                    
-                    orderHtml += `
-                        <div class="infusion-step">
-                            <span class="step-number">${number.replace(/[^0-9]/g, '')}</span>
-                            <span class="step-med">${med}</span>
-                        </div>
-                    `;
-                }
-            });
-
-            document.getElementById('protocol-detail-content').innerHTML = `
-                ${orderHtml}
-                <p class="mt-6 text-xs text-slate-500 italic border-t pt-3">
-                    Nota: Esta ordem é baseada nas evidências mais atuais disponíveis e prioriza segurança e eficácia.
-                    <br>
-                    Fonte: Ordem de Infusão de Medicamentos Antineoplásicos - 2ª Edição.
-                </p>
-            `;
-        }
-    };
-    
-    // --- LÓGICA PRINCIPAL DA APLICAÇÃO (INJEÇÃO DE MODAIS CORRETOS) ---
+    // --- LÓGICA DA TABELA (MANTIDA) ---
     const App = {
         data: [],
         init: async () => {
-            try { 
-                const res = await fetch('/api/medicamentos'); 
-                App.data = await res.json(); 
-                App.render(App.data); 
-            } catch(e) {}
+            try { const res = await fetch('/api/medicamentos'); App.data = await res.json(); App.render(App.data); } catch(e) {}
             document.getElementById('search').addEventListener('input', e => App.render(App.data.filter(m => JSON.stringify(m).toLowerCase().includes(e.target.value.toLowerCase()))));
         },
         render: (list) => {
@@ -366,7 +224,7 @@
                     let pres = m.concentration || '-'; if (pres.includes('|')) pres = pres.replace(/\|/g, '<br>');
                     
                     let stabRaw = `Rec: ${m.stability_reconst}<br>Dil: ${m.stability_diluted}`;
-                    let safeStab = stabRaw.replace(/'/g, "\'").replace(/"/g, "&quot;").replace(/\n/g, " ");
+                    let safeStab = stabRaw.replace(/'/g, "\\'").replace(/"/g, "&quot;").replace(/\\n/g, " ");
                     let icons = [
                         `<span class="icon-btn text-slate-500 hover:text-blue-600" onclick="App.modalParams(${m.id})" oncontextmenu="App.quickParams(event, ${m.id}); return false;">📋</span>`,
                         `<span class="icon-btn phys-icon" onclick="App.modalPhys(${m.id})" oncontextmenu="App.quickPhys(event, ${m.id}); return false;">ℹ️</span>`,
@@ -374,6 +232,7 @@
                         `<span class="icon-btn clin-icon" onclick="App.modalClin(${m.id})">🏥</span>`
                     ];
                     
+                    // LÓGICA PADRONIZAÇÃO (AGORA COM EMOJIS)
                     let stdContent = '<span class="dil-dash">-</span>';
                     if (m.std_volume && m.std_volume !== '-' && m.std_volume !== 'nan') {
                         let dil = m.std_diluent ? m.std_diluent.toUpperCase() : '';
@@ -388,6 +247,7 @@
                             emoji = '💧';
                         }
                         
+                        // Renderização do Badge com Emoji
                         stdContent = `<span class="std-badge ${styleClass}" title="${m.std_diluent}">
                                             <span class="std-emoji">${emoji}</span>${m.std_volume}
                                         </span>`;
@@ -405,87 +265,26 @@
                 });
             });
         },
-        
-        // --- FUNÇÕES DE MODAL DE INFORMAÇÃO (RECONSTRUÍDAS) ---
-        modalParams: (id) => App.openInfoModal(id, 'Farmacotécnica', [
-            ['Vol. Reconst.', 'param_vol_reconst'], 
-            ['Conc. Produto', 'param_conc_prod'], 
-            ['Diluentes', 'param_diluentes_raw'], 
-            ['Conc. Máx.', 'param_conc_max_raw'], 
-            ['Diluição Padrão', 'param_diluicao_padrao'], 
-            ['Volume Padrão', 'param_vol_padrao'], 
-            ['Tempo Infusão', 'param_tempo_infusao']
-        ]),
-        modalPhys: (id) => App.openInfoModal(id, 'Físico-Químico', [
-            ['Incompatibilidade', 'phys_incomp'], 
-            ['Fotossensibilidade', 'phys_foto'], 
-            ['Caráter', 'phys_carater'], 
-            ['Filtro', 'phys_filtro'], 
-            ['Risco (NIOSH)', 'risk_source']
-        ]),
-        modalStab: (id) => App.openInfoModal(id, 'Estabilidade', [
-            ['Reconstituído', 'stability_reconst'], 
-            ['Diluído', 'stability_diluted']
-        ]),
-        
-        openInfoModal: (id, title, fields) => {
-            const m = App.data.find(x => x.id === id);
-            if (!m) return;
-            document.getElementById('modal-title').innerText = `${m.name} - ${title}`;
-            let html = ''; 
-            fields.forEach(f => {
-                html += `<tr><td>${f[0]}</td><td class="text-slate-600">${m[f[1]] || '-'}</td></tr>`;
-            });
-            document.getElementById('modal-table-body').innerHTML = html;
-            document.getElementById('info-modal').style.display = 'flex';
-        },
-        
-        modalClin: (id) => {
-            const m = App.data.find(x => x.id === id);
-            if (!m) return;
-            document.getElementById('clin-modal-title').innerText = `${m.name} - Clínica`;
-            let c = '';
-            if(m.toxicity && m.toxicity.length > 5) c += `<div class="clin-card alert-box"><div class="clin-title">☣️ Toxicidade</div><div class="clin-text">${m.toxicity}</div></div>`;
-            if(m.nursing_care && m.nursing_care.length > 5) c += `<div class="clin-card"><div class="clin-title">👩‍⚕️ Enfermagem</div><div class="clin-text">${m.nursing_care}</div></div>`;
-            if(m.particularities && m.particularities.length > 5) c += `<div class="clin-card"><div class="clin-title">💡 Particularidades</div><div class="clin-text">${m.particularities}</div></div>`;
-            if(!c) c = '<div class="text-center text-gray-400 py-10">Sem dados.</div>';
-            document.getElementById('clin-modal-body').innerHTML = c;
-            document.getElementById('clin-modal').style.display = 'flex';
-        },
-        
-        closeModal: (e, id) => { 
-            if(e.target.id === id || e.target.classList.contains('modal-overlay')) {
-                document.getElementById(id).style.display = 'none'; 
-            }
-        },
-        
-        // --- FUNÇÕES CONTEXTO/TOOLTIP (MANTIDAS) ---
-        showTip: (e, text, title) => {
-            const t = document.getElementById('tooltip');
-            document.getElementById('tooltip-header').innerText = title;
-            document.getElementById('tooltip-content').innerHTML = text;
-            t.style.display = 'block';
-            t.style.left = (e.pageX + 15) + 'px';
-            t.style.top = (e.pageY + 15) + 'px';
-        },
-        hideTip: () => document.getElementById('tooltip').style.display = 'none',
-        closeAll: () => document.getElementById('context-menu').style.display = 'none',
+        modalParams: (id) => App.openInfoModal(id, 'Farmacotécnica', [['Vol. Reconst.', 'param_vol_reconst'], ['Conc. Produto', 'param_conc_prod'], ['Diluentes', 'param_diluentes_raw'], ['Conc. Máx.', 'param_conc_max_raw'], ['Diluição Padrão', 'param_diluicao_padrao'], ['Volume Padrão', 'param_vol_padrao'], ['Tempo Infusão', 'param_tempo_infusao']]),
+        modalPhys: (id) => App.openInfoModal(id, 'Físico-Químico', [['Incompatibilidade', 'phys_incomp'], ['Fotossensibilidade', 'phys_foto'], ['Caráter', 'phys_carater'], ['Filtro', 'phys_filtro'], ['Risco (NIOSH)', 'risk_source']]),
+        modalStab: (id) => App.openInfoModal(id, 'Estabilidade', [['Reconstituído', 'stability_reconst'], ['Diluído', 'stability_diluted']]),
+        modalClin: (id) => { const m=App.data.find(x=>x.id===id); document.getElementById('clin-modal-title').innerText=`${m.name} - Clínica`; let c=''; if(m.toxicity&&m.toxicity.length>5)c+=`<div class="clin-card alert-box"><div class="clin-title">☣️ Toxicidade</div><div class="clin-text">${m.toxicity}</div></div>`; if(m.nursing_care&&m.nursing_care.length>5)c+=`<div class="clin-card"><div class="clin-title">👩‍⚕️ Enfermagem</div><div class="clin-text">${m.nursing_care}</div></div>`; if(m.particularities&&m.particularities.length>5)c+=`<div class="clin-card"><div class="clin-title">💡 Particularidades</div><div class="clin-text">${m.particularities}</div></div>`; if(!c)c='<div class="text-center text-gray-400 py-10">Sem dados.</div>'; document.getElementById('clin-modal-body').innerHTML=c; document.getElementById('clin-modal').style.display='flex'; },
+        openInfoModal: (id, title, fields) => { const m = App.data.find(x => x.id === id); document.getElementById('modal-title').innerText = `${m.name} - ${title}`; let html = ''; fields.forEach(f => html += `<tr><td>${f[0]}</td><td class="text-slate-600">${m[f[1]] || '-'}</td></tr>`); document.getElementById('modal-table-body').innerHTML = html; document.getElementById('info-modal').style.display = 'flex'; },
+        closeModal: (e, id) => { if(e.target.id === id) document.getElementById(id).style.display = 'none'; },
+        showTip: (e, text, title) => { const t = document.getElementById('tooltip'); document.getElementById('tooltip-header').innerText = title; document.getElementById('tooltip-content').innerHTML = text; t.style.display = 'block'; t.style.left = (e.pageX+15)+'px'; t.style.top = (e.pageY+15)+'px'; },
+        hideTip: () => document.getElementById('tooltip').style.display='none',
         ctxBrands: (e, b) => App.showCtx(e, 'MARCAS', b.split('|').map(x=>['',x])),
         quickParams: (e, id) => { const m=App.data.find(x=>x.id===id); App.showCtx(e, 'Resumo', [['Vol', m.param_vol_reconst], ['Tempo', m.param_tempo_infusao]]); },
         quickPhys: (e, id) => { const m=App.data.find(x=>x.id===id); App.showCtx(e, 'Segurança', [['Filtro', m.phys_filtro], ['Caráter', m.phys_carater]]); },
-        showCtx: (e, t, rows) => { 
-            e.preventDefault(); 
-            e.stopPropagation(); 
-            const m = document.getElementById('context-menu');
-            let h = `<div class="ctx-header">${t}</div>`;
-            rows.forEach(r => { if(r[1]) h += `<div class="ctx-item">${r[0]?`<span class="ctx-label">${r[0]}</span>`:''}${r[1]}</div>`; });
-            m.innerHTML = h;
-            m.style.display = 'block';
-            m.style.left = e.pageX + 'px';
-            m.style.top = e.pageY + 'px';
-        }
+        showCtx: (e, t, rows) => { e.preventDefault(); e.stopPropagation(); const m=document.getElementById('context-menu'); let h=`<div class="ctx-header">${t}</div>`; rows.forEach(r=>{if(r[1])h+=`<div class="ctx-item">${r[0]?`<span class="ctx-label">${r[0]}</span>`:''}${r[1]}</div>`}); m.innerHTML=h; m.style.display='block'; m.style.left=e.pageX+'px'; m.style.top=e.pageY+'px'; },
+        closeAll: () => document.getElementById('context-menu').style.display='none'
     };
     document.addEventListener('DOMContentLoaded', App.init);
     </script>
 </body>
 </html>
+"""
+
+# Cria ou sobrescreve o arquivo HTML com o novo layout
+with open("templates/index.html", "w", encoding="utf-8") as f:
+    f.write(html_code)
