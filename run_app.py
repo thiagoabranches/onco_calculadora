@@ -2,57 +2,65 @@ import streamlit as st
 import subprocess
 import time
 import requests
-from streamlit_html_component import html_component
 import os
+import signal
+import sys
+import atexit
 
 # 1. Configurações Iniciais
 FLASK_PORT = 8000
 FLASK_SERVER_URL = f"http://localhost:{FLASK_PORT}"
 
 st.set_page_config(layout="wide")
+st.title("OncoCalc Pro - Módulo Streamlit/Flask")
 
-# 2. Iniciar o Servidor Flask em Background
-@st.cache_resource(ttl=3600)
+# Variável global para armazenar o processo Flask
+flask_process = None
+
+# Função de limpeza para encerrar o Flask ao sair do Streamlit
+def kill_flask_process():
+    global flask_process
+    if flask_process:
+        st.info("Encerrando servidor Flask...")
+        flask_process.terminate()
+        flask_process.wait()
+        st.success("Servidor Flask encerrado.")
+
+# Garante que o processo seja encerrado ao fechar a sessão
+atexit.register(kill_flask_process)
+
+
+# 2. Iniciar o Servidor Flask em Background (Agora, usa o comando ideal para Cloud)
+# Usaremos a abordagem de iniciar o Gunicorn ou Python, e o Streamlit exibirá via Iframe.
 def start_flask_server():
-    st.info("Iniciando servidor Flask em segundo plano...")
+    global flask_process
     
-    # Comando robusto para Streamlit Cloud
-    command = ["gunicorn", "-w", "4", "-b", f"0.0.0.0:{FLASK_PORT}", "app:app"]
-    
-    try:
-        process = subprocess.Popen(command, 
-                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        st.warning("Gunicorn não encontrado. Tentando iniciar com 'python app.py'.")
-        command_fallback = ["python", "app.py"]
-        process = subprocess.Popen(command_fallback, env=os.environ.copy())
-    
-    time.sleep(5) 
-    
-    # Verifica se o servidor Flask está online
-    try:
-        requests.get(FLASK_SERVER_URL, timeout=10)
-        st.success(f"Servidor Flask iniciado com sucesso na porta {FLASK_PORT}.")
-    except requests.exceptions.ConnectionError:
-        st.error("Erro: Servidor Flask não iniciou ou a porta está inacessível.")
+    if flask_process is None:
+        st.info("Iniciando servidor Flask em segundo plano...")
         
-    return process
+        # Streamlit Cloud prefere Gunicorn
+        command = ["gunicorn", "-w", "4", "-b", f"0.0.0.0:{FLASK_PORT}", "app:app"]
+        
+        try:
+            flask_process = subprocess.Popen(command, 
+                                           stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                                           preexec_fn=os.setsid) # Inicia em um novo grupo de processo
+            time.sleep(5) 
+            st.success(f"Servidor Flask iniciado na porta {FLASK_PORT}.")
+            
+            # Checagem de saúde (Health Check)
+            requests.get(FLASK_SERVER_URL, timeout=10)
 
-# 3. Execução Principal
-flask_process = start_flask_server()
+        except (FileNotFoundError, requests.exceptions.RequestException) as e:
+            st.error(f"Falha Crítica ao iniciar o servidor Flask/Gunicorn: {e}")
+            st.code(" ".join(command))
+            return False
+            
+    return True
 
-# 4. Tenta buscar o conteúdo HTML gerado pelo Flask e exibir
-try:
-    # Tenta obter o HTML do Flask
-    response = requests.get(FLASK_SERVER_URL, timeout=30)
-    
-    if response.status_code == 200:
-        # Exibe o conteúdo HTML gerado pelo Flask
-        html_component(response.text, height=1000, width="100%", scrolling=True)
-        st.info("Interface servida pelo Flask incorporada ao Streamlit.")
-    else:
-        st.error(f"Erro ao carregar a página: Código de status {response.status_code}. O Flask pode ter falhado.")
-
-except requests.exceptions.RequestException as e:
-    st.error(f"Erro crítico de conexão: O Flask não respondeu. {e}")
+# Tenta iniciar o servidor
+if start_flask_server():
+    # 3. Incorporar o Conteúdo Flask via Iframe Nativo
+    # Definindo o tamanho do iframe. Note que a altura deve ser grande para caber a interface.
+    st.components.v1.iframe(FLASK_SERVER_URL, height=800, scrolling=True)
 
