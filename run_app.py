@@ -31,10 +31,14 @@ atexit.register(kill_flask_process)
 
 
 
-# 2. Iniciar o Servidor Flask em Background (Agora, usa o comando ideal para Cloud)
+
+# 2. Iniciar o Servidor Flask em Background
 def start_flask_server():
     global flask_process
     
+    # URL de checagem de saúde (usa 0.0.0.0 para acesso interno ao container)
+    FLASK_SERVER_HEALTH_URL = f"http://0.0.0.0:{FLASK_PORT}"
+
     if flask_process is None:
         st.info("Iniciando servidor Flask em segundo plano...")
         
@@ -57,6 +61,7 @@ def start_flask_server():
             return False
             
     return True
+
 
 
 
